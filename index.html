@@ -1,0 +1,999 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
+<title>Calendario LIDER PRICE Nov–Dic</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: banda oscura de marca arriba (topbar + hero), cuerpo claro "Casa clara"; secciones en columna:
+   Cómo funciona → Calendario → Publicaciones → Campaña → Historias → Pendientes. Misma estructura que el plan de ACTIONSPORT. */
+:root{
+  --navy:#1F1F1F; --brand-green:#E01F36; --on-navy:#FEFDFD; --band-muted:#B4B1AD; --band-line:#3A3836; --band-2:#2A2928;
+  --bg:#FEFDFD; --surface:#FFFFFF; --surface-2:#F2F1EF; --line:#E3E1DE;
+  --fg:#1F1F1F; --muted:#616161; --accent:#C8192E; --accent-ink:#FFFFFF;
+  --c-carr:#1F1F1F; --c-vend:#C8192E; --c-prod:#6E6C69; --c-pauta:#E01F36; --c-hero:#6E6C69;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --step--1:.8125rem; --step-0:.9375rem; --step-1:1.125rem; --step-2:1.5rem; --step-3:2.25rem; --step-4:clamp(2.25rem,6vw,3.75rem);
+  --radius:10px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --navy:#0F0E0E; --band-line:#2E2D2B; --band-2:#1E1D1C;
+  --bg:#151414; --surface:#1C1B1A; --surface-2:#252423; --line:#34322F;
+  --fg:#F2F1EF; --muted:#B4B1AD; --accent:#FF5A6D; --accent-ink:#151414;
+  --c-carr:#F2F1EF; --c-vend:#FF5A6D; --c-prod:#B4B1AD; --c-pauta:#FF5A6D; --c-hero:#B4B1AD;
+  color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --navy:#0F0E0E; --band-line:#2E2D2B; --band-2:#1E1D1C;
+  --bg:#151414; --surface:#1C1B1A; --surface-2:#252423; --line:#34322F;
+  --fg:#F2F1EF; --muted:#B4B1AD; --accent:#FF5A6D; --accent-ink:#151414;
+  --c-carr:#F2F1EF; --c-vend:#FF5A6D; --c-prod:#B4B1AD; --c-pauta:#FF5A6D; --c-hero:#B4B1AD;
+  color-scheme:dark; }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:var(--step-0);line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.05}
+p{margin:0}
+em.kw{font-style:normal;font-weight:800;color:var(--accent)}
+.eyebrow{font-size:var(--step--1);font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+
+/* Barra de marca */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);border-bottom:1px solid var(--band-line)}
+.topbar .wrap{display:flex;align-items:center;gap:20px;padding-block:12px}
+.topbar img{height:22px;width:auto;display:block;flex:none}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;min-width:0;margin-left:auto}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:#D9D7D3;text-decoration:none;font-weight:600;font-size:var(--step--1);padding:7px 11px;border-radius:999px;white-space:nowrap}
+.nav a:hover,.nav a:focus-visible{color:var(--on-navy);background:var(--band-2);outline:none}
+
+/* Hero */
+.hero{background:var(--navy);color:var(--on-navy);padding-block:44px 40px}
+.hero .eyebrow{color:var(--band-muted)}
+.hero h1{font-size:var(--step-4);font-weight:800;letter-spacing:-.02em;margin-top:12px;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--brand-green)}
+.hero p.lead{margin-top:16px;max-width:62ch;color:#E3E1DE;font-size:var(--step-1)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--band-line);margin-top:32px;border:1px solid var(--band-line);border-radius:var(--radius);overflow:hidden}
+.stat{background:var(--navy);padding:16px 18px}
+.stat b{display:block;font-size:var(--step-3);font-weight:800;letter-spacing:-.02em;line-height:1}
+.stat span{display:block;margin-top:6px;color:var(--band-muted);font-size:var(--step--1)}
+.stat b.g{color:var(--brand-green);font-style:normal}
+
+section{padding-block:56px 8px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 24px;margin-bottom:24px}
+.sec-head h2{font-size:var(--step-3);font-weight:800;letter-spacing:-.02em}
+.sec-head p{color:var(--muted);max-width:60ch}
+h3{font-size:var(--step-1);font-weight:800;letter-spacing:-.01em}
+
+/* Pills de sistema */
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:999px;white-space:nowrap;
+  color:var(--sys);background:color-mix(in srgb,var(--sys) 16%,transparent);border:1px solid color-mix(in srgb,var(--sys) 40%,transparent)}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--sys)}
+[data-sys="video"]{--sys:var(--c-video)} [data-sys="hero"]{--sys:var(--c-hero)} [data-sys="uso"]{--sys:var(--c-uso)}
+[data-sys="guia"]{--sys:var(--c-guia)} [data-sys="bbis"]{--sys:var(--c-bbis)} [data-sys="pauta"]{--sys:var(--c-pauta)}
+
+/* Resumen */
+.mix{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:4px;margin-top:14px}
+.mix i{height:38px;border-radius:5px;background:var(--sys)}
+.mixlegend{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:12px;color:var(--muted);font-size:var(--step--1)}
+.mixlegend b{color:var(--fg)}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;min-width:0}
+.systems{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:20px}
+.sys{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--sys);border-radius:var(--radius);padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.sys .count{font-size:var(--step--1);color:var(--muted)}
+.sys .count b{color:var(--sys);font-size:var(--step-2);font-weight:800;margin-right:4px}
+.sys p{color:var(--muted);font-size:var(--step--1)}
+.sys p strong{color:var(--fg);font-weight:600}
+.rhythm{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.rhythm div{border-left:2px solid var(--accent);padding:2px 0 2px 12px}
+.rhythm b{display:block;font-weight:800}
+.rhythm span{color:var(--muted);font-size:var(--step--1)}
+.arc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.arc div{background:var(--surface-2);border-radius:8px;padding:14px}
+.arc .m{font-size:var(--step--1);color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.arc .t{font-weight:800;font-size:var(--step-1);margin-top:4px}
+.arc ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:var(--step--1)}
+ol.steps{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px;counter-reset:s}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:baseline}
+ol.steps li::before{content:counter(s);font-weight:800;font-style:normal;color:var(--accent);font-size:var(--step-1)}
+ol.steps b{font-weight:700}
+ol.steps span{color:var(--muted)}
+.tagform{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tagform code{font-family:var(--font);font-weight:600;font-size:var(--step--1);padding:5px 9px;border-radius:6px;background:var(--surface-2);border:1px solid var(--line)}
+.tagform code.var{border-style:dashed;color:var(--muted)}
+
+/* Calendario */
+.months{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.month{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;min-width:0}
+.month-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}
+.month-head h3{font-weight:800;font-size:var(--step-2)}
+.month-head span{color:var(--muted);font-size:var(--step--1)}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.dow{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center;padding-bottom:4px}
+.day{min-height:84px;border-radius:6px;background:var(--surface-2);padding:5px;display:flex;flex-direction:column;gap:4px;min-width:0;position:relative}
+.day.out{background:transparent}
+.day .d{font-size:.75rem;font-weight:700;color:var(--muted)}
+.day.pubday .d{color:var(--fg)}
+.day.camp{box-shadow:inset 0 -3px 0 var(--c-pauta)}
+.day .note{font-size:.62rem;line-height:1.2;color:var(--muted);font-weight:600}
+.chip{all:unset;cursor:pointer;display:flex;flex-direction:column;gap:1px;border-radius:5px;padding:4px 5px;background:color-mix(in srgb,var(--sys) 22%,var(--surface));border-left:3px solid var(--sys);min-width:0}
+.chip:hover{background:color-mix(in srgb,var(--sys) 34%,var(--surface))}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.chip .n{font-size:.7rem;font-weight:800;font-variant-numeric:tabular-nums}
+.chip .l{font-size:.66rem;line-height:1.2;color:var(--fg);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.cal-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.camp-key{display:inline-flex;align-items:center;gap:8px;font-size:var(--step--1);color:var(--muted)}
+.camp-key i{width:22px;height:3px;background:var(--c-pauta);border-radius:2px}
+
+/* Publicaciones */
+.filters{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:flex-start;margin-bottom:18px}
+.fgroup{display:flex;flex-direction:column;gap:6px;min-width:0}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font:inherit;font-size:var(--step--1);font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.result{color:var(--muted);font-size:var(--step--1);margin-bottom:12px}
+.list{display:grid;gap:10px}
+details.post{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--sys);border-radius:var(--radius);min-width:0}
+details.post[open]{border-color:color-mix(in srgb,var(--sys) 55%,var(--line))}
+details.post summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:30px 54px 128px 1fr auto;gap:16px;align-items:center;padding:14px 18px}
+details.post summary::-webkit-details-marker{display:none}
+details.post summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:var(--radius)}
+.pn{font-size:var(--step-2);font-weight:800;font-variant-numeric:tabular-nums;color:var(--sys);font-style:normal}
+.pdate b{display:block;font-weight:700;font-variant-numeric:tabular-nums}
+.pdate span{color:var(--muted);font-size:var(--step--1)}
+.pmain{min-width:0;display:flex;flex-direction:column;gap:5px}
+.pmain .meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.pmain .model{font-size:var(--step--1);color:var(--muted)}
+.pmain .head{font-weight:800;letter-spacing:-.01em;font-size:var(--step-1);line-height:1.15}
+.chev{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);transition:transform .2s}
+details[open] .chev{transform:rotate(180deg)}
+.pbody{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:22px;padding:4px 18px 22px;border-top:1px solid var(--line);padding-top:20px}
+.block{display:flex;flex-direction:column;gap:6px;min-width:0}
+.block+.block{margin-top:16px}
+.lab{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:8px}
+.piece{background:var(--navy);color:var(--on-navy);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.piece .pl{display:grid;grid-template-columns:auto 1fr;gap:4px 10px}
+.piece .pl small{font-size:.7rem;color:var(--band-muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.piece .pl span{font-weight:800;line-height:1.25}
+.piece em.kw{color:var(--brand-green)}
+.txt{color:var(--fg);white-space:pre-wrap;overflow-wrap:anywhere}
+.caption{background:var(--surface-2);border-radius:8px;padding:14px 16px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:var(--step-0);line-height:1.6}
+.kws{display:flex;flex-wrap:wrap;gap:6px}
+.kws span{font-size:var(--step--1);padding:3px 9px;border-radius:999px;background:var(--surface-2);border:1px solid var(--line)}
+.hash{font-weight:700;color:var(--accent);overflow-wrap:anywhere}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:var(--step--1)}
+.facts dt{color:var(--muted);font-weight:600}
+.facts dd{margin:0;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+/* Guion de Reel */
+.guion{grid-column:1/-1;display:flex;flex-direction:column;gap:16px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:18px;min-width:0}
+.g-head{display:flex;flex-direction:column;gap:8px}
+.g-idea{font-size:var(--step-1);font-weight:700;line-height:1.35;max-width:70ch}
+.g-meta{display:flex;flex-wrap:wrap;gap:6px}
+.g-meta span{font-size:.75rem;font-weight:700;letter-spacing:.03em;padding:4px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--fg)}
+.g-meta span.hot{background:color-mix(in srgb,var(--accent) 16%,transparent);border-color:color-mix(in srgb,var(--accent) 45%,transparent);color:var(--accent)}
+.g-bar{display:flex;gap:3px;height:30px}
+.g-bar i{display:grid;place-items:center;font-style:normal;font-size:.72rem;font-weight:800;font-variant-numeric:tabular-nums;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:5px;min-width:0}
+.g-bar i.has-text{color:var(--fg);border-bottom:3px solid var(--accent)}
+.g-bar i.end{background:var(--navy);color:var(--brand-green);border-color:var(--navy)}
+.g-scale{display:flex;justify-content:space-between;font-size:.68rem;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:-10px}
+.g-list{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.g-shot{display:grid;grid-template-columns:34px 96px minmax(0,1.2fr) minmax(0,1fr);gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.g-shot:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.g-n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-variant-numeric:tabular-nums;background:var(--brand-green);color:#FFFFFF}
+.g-when{display:flex;flex-direction:column;gap:2px}
+.g-when b{font-variant-numeric:tabular-nums;font-weight:700;font-size:var(--step--1)}
+.g-when span{font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.g-que{font-size:var(--step-0);line-height:1.45;overflow-wrap:anywhere;display:flex;flex-direction:column;gap:6px;margin:0}
+.g-que .img{color:var(--muted);font-size:var(--step--1)}
+.g-dice{display:block;font-size:var(--step-0);font-weight:600;line-height:1.4;padding-left:10px;border-left:3px solid var(--accent)}
+.g-dice small{display:block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:1px}
+.g-dice.cliente{border-left-color:var(--c-hero)}
+.g-dice.cliente small{color:var(--c-hero)}
+.serie{margin-top:20px;background:var(--navy);color:var(--on-navy);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:18px;overflow:hidden}
+.serie .eyebrow{color:var(--band-muted)}
+.serie h3{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;letter-spacing:-.02em}
+.serie h3 em{font-style:normal;color:var(--brand-green)}
+.serie p.lead2{color:#E3E1DE;max-width:64ch}
+.beats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;list-style:none;margin:0;padding:0;counter-reset:b}
+.beats li{counter-increment:b;background:var(--band-2);border:1px solid var(--band-line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.beats li::before{content:counter(b);font-weight:800;font-style:normal;font-size:1.4rem;color:var(--brand-green);line-height:1}
+.beats b{font-weight:800;font-size:var(--step--1);letter-spacing:.04em}
+.beats span{color:#D9D7D3;font-size:var(--step--1)}
+.beats .t{color:var(--band-muted);font-size:.7rem;font-weight:700;font-variant-numeric:tabular-nums}
+.serie-rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.serie-rules div{border-left:2px solid var(--brand-green);padding-left:12px;font-size:var(--step--1);color:#E3E1DE}
+.serie-rules b{display:block;color:var(--on-navy);font-size:var(--step-0)}
+@media (max-width:900px){ .beats{grid-template-columns:repeat(2,minmax(0,1fr))} .serie-rules{grid-template-columns:minmax(0,1fr)} }
+@media (max-width:520px){ .beats{grid-template-columns:minmax(0,1fr)} .serie{padding:18px} }
+.g-pant{border-radius:6px;padding:8px 10px;min-width:0}
+.g-pant.on{background:var(--navy);color:var(--on-navy)}
+.g-pant.on small{display:block;font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--band-muted);margin-bottom:2px}
+.g-pant.on span{font-weight:800;line-height:1.25;overflow-wrap:anywhere}
+.g-pant.on em.kw{color:var(--brand-green)}
+.g-pant.off{font-size:var(--step--1);color:var(--muted);border:1px dashed var(--line)}
+.g-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.g-notes ul{margin:6px 0 0;padding-left:18px;display:grid;gap:4px;font-size:var(--step--1);color:var(--fg)}
+.g-notes li::marker{color:var(--accent)}
+@media (max-width:760px){
+  .g-shot{grid-template-columns:34px minmax(0,1fr);gap:8px 12px}
+  .g-que,.g-pant{grid-column:1/-1}
+  .g-notes{grid-template-columns:minmax(0,1fr)}
+  .g-bar i{font-size:0}
+}
+/* Estado hecho / pendiente */
+.done-box{display:grid;place-items:center;width:30px;height:30px;cursor:pointer}
+.done-box input{appearance:none;-webkit-appearance:none;width:24px;height:24px;margin:0;border-radius:6px;border:2px solid var(--line);background:var(--surface-2);cursor:pointer;display:grid;place-items:center;transition:background .15s,border-color .15s}
+.done-box input:hover{border-color:var(--accent)}
+.done-box input:checked{background:var(--brand-green);border-color:var(--brand-green)}
+.done-box input:checked::after{content:"";width:6px;height:11px;border:solid #FFFFFF;border-width:0 3px 3px 0;transform:translateY(-1px) rotate(45deg)}
+.done-box input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+details.post.is-done{opacity:.62}
+details.post.is-done[open]{opacity:1}
+details.post.is-done .head{text-decoration:line-through;text-decoration-thickness:2px;text-decoration-color:color-mix(in srgb,var(--fg) 45%,transparent)}
+.state{display:block;font-size:.72rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+details.post.is-done .state{color:var(--accent)}
+.chip.is-done{opacity:.5}
+.chip.is-done .n::after{content:" ✓";color:var(--accent)}
+.progress{display:grid;grid-template-columns:minmax(0,1.2fr) repeat(2,minmax(0,1fr));gap:16px;align-items:center;margin-bottom:22px}
+.progress .big{font-size:var(--step-3);font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
+.progress .big small{font-size:var(--step-0);font-weight:600;color:var(--muted);margin-left:6px}
+.bar{height:8px;border-radius:999px;background:var(--surface-2);overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;background:var(--brand-green);border-radius:999px;transition:width .3s}
+.progress .m{font-size:var(--step--1);color:var(--muted)}
+.progress .m b{color:var(--fg);font-variant-numeric:tabular-nums}
+.note-local{font-size:var(--step--1);color:var(--muted);margin:-10px 0 18px}
+@media (prefers-reduced-motion: reduce){.bar i,.done-box input{transition:none}}
+.copy{font:inherit;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);background:transparent;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-radius:999px;padding:3px 10px;cursor:pointer}
+.copy:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}
+.copy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Campaña */
+.campaign{background:var(--navy);color:var(--on-navy);border-radius:14px;padding:28px;overflow:hidden;position:relative}
+.campaign .eyebrow{color:var(--band-muted)}
+.campaign h3.big{font-size:clamp(1.75rem,4.5vw,3rem);font-weight:800;letter-spacing:-.02em;margin-top:10px;max-width:18ch}
+.campaign h3.big em{font-style:normal;color:var(--brand-green)}
+.ribbon{position:absolute;right:-40px;top:34px;width:280px;height:3px;background:var(--brand-green);transform:rotate(-18deg);opacity:.9}
+.cfacts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--band-line);border:1px solid var(--band-line);border-radius:8px;overflow:hidden;margin-top:24px}
+.cfacts div{background:var(--navy);padding:12px 14px}
+.cfacts small{display:block;font-size:.7rem;color:var(--band-muted);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.cfacts b{display:block;margin-top:4px;font-weight:700}
+.timeline{margin-top:20px}
+.tl-days{display:grid;grid-template-columns:repeat(31,minmax(0,1fr));gap:2px}
+.tl-days i{height:26px;border-radius:3px;background:var(--surface-2)}
+.tl-days i.p1{background:color-mix(in srgb,var(--c-pauta) 45%,var(--surface))}
+.tl-days i.p2{background:var(--c-pauta)}
+.tl-days i.xmas{outline:2px solid var(--muted);outline-offset:-2px}
+.tl-scale{display:grid;grid-template-columns:repeat(31,minmax(0,1fr));gap:2px;margin-top:4px;font-size:.62rem;color:var(--muted);text-align:center;font-variant-numeric:tabular-nums}
+.phases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+.phase{border-radius:8px;padding:14px;background:var(--surface-2);min-width:0}
+.phase .amt{font-size:var(--step-2);font-weight:800;font-variant-numeric:tabular-nums}
+.phase .amt small{font-size:var(--step--1);font-weight:600;color:var(--muted);margin-left:6px}
+.phase p{color:var(--muted);font-size:var(--step--1);margin-top:4px}
+.story{display:grid;grid-template-columns:2fr 3fr 3fr 3fr 4fr;gap:4px;margin-top:14px}
+.shot{background:var(--surface-2);border-radius:6px;padding:10px;min-width:0;border-top:3px solid var(--sys)}
+.shot .t{font-size:.7rem;font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums}
+.shot .w{font-weight:800;font-size:var(--step--1);margin-top:4px;line-height:1.25}
+.shot .s{font-size:.72rem;color:var(--muted);margin-top:4px}
+table.kpi{width:100%;border-collapse:collapse;font-size:var(--step--1)}
+table.kpi th,table.kpi td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+table.kpi th{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.tablebox{overflow-x:auto}
+
+/* Pendientes */
+.todo-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 20px;margin-bottom:12px}
+.todo-count{font-size:var(--step--1);color:var(--muted)}
+.todo-count b{color:var(--fg);font-variant-numeric:tabular-nums}
+.todo-tools{display:flex;flex-wrap:wrap;gap:6px}
+.todo{display:grid;gap:8px}
+.todo-item{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.todo-item .done-box{margin-top:-3px}
+.todo-item b{display:block;font-weight:700;overflow-wrap:anywhere}
+.todo-item .sub{display:block;color:var(--muted);font-size:var(--step--1);overflow-wrap:anywhere}
+.todo-item.is-done{opacity:.62}
+.todo-item.is-done b{text-decoration:line-through;text-decoration-thickness:2px}
+.todo-item .tag{display:inline-block;margin-top:6px;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent)}
+.icon-btn{font:inherit;font-size:var(--step--1);font-weight:600;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:5px 11px;cursor:pointer;white-space:nowrap}
+.icon-btn:hover{color:var(--fg);border-color:color-mix(in srgb,var(--fg) 40%,var(--line))}
+.icon-btn.danger:hover{color:#FF8A80;border-color:#FF8A80}
+.icon-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.todo-empty{background:var(--surface);border:1px dashed var(--line);border-radius:8px;padding:18px;color:var(--muted);font-size:var(--step--1)}
+.undo{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin-top:8px;font-size:var(--step--1)}
+.undo b{font-weight:700}
+.todo-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) auto;gap:10px;align-items:end;margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.todo-form .f{display:flex;flex-direction:column;gap:6px;min-width:0}
+.todo-form input{font:inherit;font-size:var(--step-0);color:var(--fg);background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;min-width:0;width:100%}
+.todo-form input::placeholder{color:var(--muted)}
+.todo-form input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.btn-add{font:inherit;font-weight:800;font-size:var(--step-0);color:#FFFFFF;background:var(--brand-green);border:0;border-radius:8px;padding:11px 18px;cursor:pointer;white-space:nowrap}
+.btn-add:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.todo-form .err{grid-column:1/-1;color:#FF8A80;font-size:var(--step--1);min-height:0}
+@media (max-width:640px){ .todo-form{grid-template-columns:minmax(0,1fr)} .todo-item{grid-template-columns:30px minmax(0,1fr)} .todo-item .icon-btn{grid-column:2;justify-self:start} }
+footer{padding-block:48px 56px;color:var(--muted);font-size:var(--step--1)}
+
+@media (max-width:900px){
+  .months,.grid-2{grid-template-columns:minmax(0,1fr)}
+  .pbody{grid-template-columns:minmax(0,1fr)}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  details.post summary{grid-template-columns:30px 40px 1fr auto;gap:10px;padding:12px 14px}
+  .done-box{grid-column:1;grid-row:1}
+  .pn{grid-column:2;grid-row:1}
+  .pdate{grid-column:3;grid-row:1}
+  .pmain{grid-column:1/-1;grid-row:2}
+  .chev{grid-column:4;grid-row:1}
+  .progress{grid-template-columns:minmax(0,1fr)}
+  .pn{font-size:var(--step-1)}
+  .chip .l{display:none}
+  .day{min-height:58px;padding:4px}
+  .day .note{display:none}
+  .rhythm,.arc,.phases,.cfacts{grid-template-columns:minmax(0,1fr)}
+  .story{grid-template-columns:minmax(0,1fr)}
+  .tl-scale span:not(.k){visibility:hidden}
+  .campaign{padding:20px}
+  .topbar img{height:18px}
+}
+
+/* Lider Price: añadidos sobre la estructura base */
+[data-sys="carr"]{--sys:var(--c-carr)} [data-sys="vend"]{--sys:var(--c-vend)} [data-sys="prod"]{--sys:var(--c-prod)}
+.topbar img{height:24px}
+.lams{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.lam{background:var(--navy);color:var(--on-navy);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.lam .lt{display:flex;justify-content:space-between;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--band-muted)}
+.lam .lt b{color:var(--brand-green)}
+.lam .lh{font-weight:800;font-size:var(--step-1);line-height:1.2;letter-spacing:-.01em}
+.lam ul{margin:0;padding-left:16px;display:grid;gap:3px;font-size:var(--step--1);color:#E3E1DE}
+.lam ul li::marker{color:var(--brand-green)}
+.lam .la{font-size:var(--step--1);color:#E3E1DE}
+.lam .lv{font-size:.75rem;color:var(--band-muted);border-top:1px solid var(--band-line);padding-top:8px;margin-top:auto}
+.prods{display:grid;gap:6px;margin:0;padding:0;list-style:none;font-size:var(--step--1)}
+.prods li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.prods .ref{color:var(--muted);font-variant-numeric:tabular-nums}
+.low{font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-radius:999px;padding:1px 8px}
+mark.v{background:#FFF1C7;color:#6B4E00;padding:0 3px;border-radius:3px;font-weight:600}
+.code{background:var(--surface-2);border-radius:8px;padding:12px 14px;white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.78rem;line-height:1.55}
+.g-dice.sonido{border-left-color:var(--c-prod)}
+.g-dice.sonido small{color:var(--c-prod)}
+.palette{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.palette div{border-radius:8px;border:1px solid var(--line);padding:46px 10px 10px;font-size:var(--step--1)}
+.palette b{display:block}
+.palette span{color:var(--muted)}
+.tpl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px}
+.tpl div{background:var(--surface-2);border-radius:8px;padding:10px 12px;font-size:var(--step--1)}
+.tpl b{display:block}
+.tpl span{color:var(--muted)}
+.rules{margin:12px 0 0;padding-left:18px;display:grid;gap:6px;font-size:var(--step--1)}
+.rules li::marker{color:var(--accent)}
+.rules.no li{color:var(--muted)}
+.hweek{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:14px}
+.hday{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.hday p{font-size:var(--step--1);color:var(--muted)}
+.hday .st{font-size:.75rem;font-weight:700;color:var(--accent);border-top:1px dashed var(--line);padding-top:6px;margin-top:auto}
+.hplan{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:14px}
+.hwk{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;gap:10px}
+.hwk .hh{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.hwk .hh b{font-variant-numeric:tabular-nums}
+.hwk .hh span{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.hwk ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.hwk li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:10px;font-size:var(--step--1)}
+.hwk li b{color:var(--muted)}
+.hideas{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:14px}
+.hidea{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.hidea p{font-size:var(--step--1)}
+.hidea .dice{font-weight:600;border-left:3px solid var(--accent);padding-left:8px}
+.hidea .st{font-size:.75rem;font-weight:700;color:var(--accent);margin-top:auto}
+@media (max-width:1000px){ .hweek{grid-template-columns:repeat(2,minmax(0,1fr))} .tpl{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:640px){ .hweek,.palette{grid-template-columns:repeat(2,minmax(0,1fr))} .hwk li{grid-template-columns:minmax(0,1fr);gap:2px} .tpl{grid-template-columns:minmax(0,1fr)} }
+#campana .story{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:640px){ #campana .story{grid-template-columns:minmax(0,1fr)} #campana .phases{grid-template-columns:minmax(0,1fr)!important} }
+
+</style>
+
+<header class="topbar">
+  <div class="wrap">
+    <img src="data:image/png;base64,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" alt="LIDER PRICE">
+    <nav class="nav" aria-label="Secciones">
+      <a href="#resumen">Cómo funciona</a>
+      <a href="#calendario">Calendario</a>
+      <a href="#publicaciones">Publicaciones</a>
+      <a href="#campana">Campaña de diciembre</a>
+      <a href="#historias">Historias</a>
+      <a href="#pendientes">Pendientes</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Instagram @liderprice_mgta · Plan de contenido</p>
+    <h1>Noviembre y diciembre, <em>publicación por publicación</em>.</h1>
+    <p class="lead">Todo lo que lleva cada post: fecha, formato, productos, texto de cada lámina o guion por escenas, dirección de diseño, descripción, CTA, palabras clave, hashtags y texto alternativo. Toca cualquier publicación del calendario para ver su ficha completa.</p>
+    <div class="stats">
+      <div class="stat"><b class="num">18</b><span>publicaciones · 15 nov al 31 dic</span></div>
+      <div class="stat"><b class="num">12</b><span>por mes · martes, jueves y fin de semana</span></div>
+      <div class="stat"><b class="num">9</b><span>reels · 5 con el vendedor y 4 de producto</span></div>
+      <div class="stat"><b class="g num">USD 148</b><span>pauta en Meta Ads · 24 nov al 23 dic</span></div>
+    </div>
+  </div>
+</div>
+
+<main>
+<section id="resumen" class="wrap">
+  <div class="sec-head">
+    <h2>Cómo funciona</h2>
+    <p>Todo para tu casa, en un solo sitio. Cada publicación abre con un problema de la casa y lo resuelve con un producto real de la tienda. Tres formatos, cuatro pilares y una sola línea gráfica: «Casa clara».</p>
+  </div>
+
+  <div class="panel">
+    <p class="eyebrow">Las 18 publicaciones en orden</p>
+    <div class="mix" id="mix" aria-label="Formato de cada publicación en orden de fecha" style="grid-template-columns:repeat(18,minmax(0,1fr))"></div>
+    <div class="mixlegend" id="mixlegend"></div>
+  </div>
+
+  <div class="systems" id="systems"></div>
+
+  <div class="serie">
+    <div>
+      <p class="eyebrow">Los reels con el vendedor · la cara de la marca</p>
+      <h3>El vecino que <em>sabe de todo</em></h3>
+    </div>
+    <p class="lead2">La gente ya conoce al vendedor de Lider Price. En sus reels plantea un problema de la casa, muestra el producto en la mano, da un dato útil y cierra invitando a la calle Velásquez. Los reels de producto, sin voz, muestran el producto en uso con sonido real.</p>
+    <ol class="beats">
+      <li><span class="t">0–2 s</span><b>El gancho</b><span>Una pregunta a cámara con el problema: «¿Se te fue la luz otra vez?».</span></li>
+      <li><span class="t">2–8 s</span><b>Lo muestra</b><span>El producto en la mano, funcionando.</span></li>
+      <li><span class="t">8–20 s</span><b>El dato</b><span>Para qué sirve, qué medida o qué potencia elegir.</span></li>
+      <li><span class="t">20–25 s</span><b>El consejo</b><span>Un truco de vendedor que solo da quien sabe.</span></li>
+      <li><span class="t">25–30 s</span><b>La invitación</b><span>«Vente a la calle Velásquez» o «Escríbenos por DM».</span></li>
+    </ol>
+    <div class="serie-rules">
+      <div><b>Siempre la misma persona</b>Con la franela de Lider Price en todos los reels. Firma su permiso de imagen.</div>
+      <div><b>Siempre el mismo diseño</b>Pastilla roja con el isotipo arriba, titular blanco abajo sobre velo gris y subtítulos en Inter.</div>
+      <div><b>Nunca precios en pantalla</b>El precio va en la descripción. Fondo limpio, nunca la pared de herramientas saturada.</div>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:20px">
+    <div class="panel">
+      <h3>Ritmo de la semana</h3>
+      <div class="rhythm">
+        <div><b>Martes · 7:00 p. m.</b><span>Carrusel con ficha o reel. Contenido para guardar.</span></div>
+        <div><b>Jueves · 7:00 p. m.</b><span>Carrusel o reel de producto.</span></div>
+        <div><b>Sáb o dom · 9:00 a. m.</b><span>Reel. Se publica en la mañana para que la gente pase ese mismo día.</span></div>
+      </div>
+      <h3 style="margin-top:24px">El arco de las siete semanas</h3>
+      <div class="arc">
+        <div><p class="m">15 – 29 nov</p><p class="t">La casa del día a día</p>
+          <ul><li>Apagones, calor, colgar y pintar</li><li>27 nov: Black Friday con Cashea</li><li>24 nov: arranca la pauta de bicis</li></ul></div>
+        <div><p class="m">1 – 31 dic</p><p class="t">Diciembre venezolano</p>
+          <ul><li>Luces, hallacas, guía de bicis, regalos</li><li>Limpieza, baño, postres y playa</li><li>22–23 dic último llamado · 30 dic casa en orden</li></ul></div>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>Cómo se escribe cada descripción</h3>
+      <ol class="steps">
+        <li><div><b>Gancho con el problema.</b> <span>Con la palabra clave, antes del «más».</span></div></li>
+        <li><div><b>Beneficio.</b> <span>Qué cambia en tu casa o tu trabajo, en 1 o 2 líneas.</span></div></li>
+        <li><div><b>Ficha corta.</b> <span>3 o 4 datos con ✔.</span></div></li>
+        <li><div><b>Precio.</b> <span>💲 [PRECIO], lo coloca la tienda al publicar.</span></div></li>
+        <li><div><b>Datos fijos.</b> <span>📍 Calle Velásquez, Porlamar · 🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm · 💳 Divisas, pago móvil, punto y Cashea.</span></div></li>
+        <li><div><b>Un CTA.</b> <span>Visita, guardado o envío.</span></div></li>
+        <li><div><b>Línea de palabras clave.</b> <span>«[Producto] en Porlamar, Isla de Margarita».</span></div></li>
+        <li><div><b>Máximo 5 hashtags.</b> <span>Es el límite actual de Instagram.</span></div></li>
+      </ol>
+      <p class="eyebrow" style="margin-top:22px">Fórmula de hashtags</p>
+      <div class="tagform"><code>#LiderPriceMgta</code><code>#Porlamar</code><code>#IslaDeMargarita</code><code class="var">+ categoría</code><code class="var">+ producto o tema</code></div>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:20px">
+    <div class="panel">
+      <h3>Línea gráfica · Casa clara</h3>
+      <p style="color:var(--muted);margin-top:6px">El producto real de la tienda en escenas de un hogar margariteño luminoso. El blanco domina, el rojo firma y el gris acompaña.</p>
+      <div class="palette">
+        <div style="background-image:linear-gradient(#FEFDFD 0 40px,transparent 40px)"><b>#FEFDFD</b><span>Fondo · 70%</span></div>
+        <div style="background-image:linear-gradient(#F2F1EF 0 40px,transparent 40px)"><b>#F2F1EF</b><span>Superficie</span></div>
+        <div style="background-image:linear-gradient(#616161 0 40px,transparent 40px)"><b>#616161 · #1F1F1F</b><span>Texto · 20%</span></div>
+        <div style="background-image:linear-gradient(#E01F36 0 40px,transparent 40px)"><b>#E01F36</b><span>Acento · máx. 10%</span></div>
+      </div>
+      <ul class="rules">
+        <li>Inter en todo: titulares ExtraBold en tipo oración, specs Medium y etiquetas Bold en mayúsculas.</li>
+        <li>Feed 1080 × 1350 con lo importante dentro de los 1012 px centrales. Reels 1080 × 1920 con texto en la zona central.</li>
+        <li>Producto real fotografiado en tienda. La IA solo construye el entorno, y se compara con la foto antes de diseñar.</li>
+      </ul>
+      <ul class="rules no">
+        <li>Fondos rojos completos, degradados, amarillo, cian, script, contornos y sombras de texto.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>Plantillas</h3>
+      <div class="tpl">
+        <div><b>T1 · Portada</b><span>Escena IA a sangre, gancho arriba a la izquierda y etiqueta roja con el producto.</span></div>
+        <div><b>T2 · Ficha</b><span>Producto recortado en el 55% izquierdo y 4 specs a la derecha.</span></div>
+        <div><b>T3 · Uso</b><span>Plano detalle o manos en uso con una sola frase.</span></div>
+        <div><b>T4 · Cierre</b><span>Tagline, bloque de tienda y el isotipo rojo grande.</span></div>
+        <div><b>R1 · Vendedor</b><span>Plano medio, velo gris abajo con titular blanco y pastilla roja.</span></div>
+        <div><b>R2 · Producto</b><span>Producto en escena con titular negro en la zona clara.</span></div>
+      </div>
+      <p class="eyebrow" style="margin-top:20px">Cómo se produce cada pieza</p>
+      <ol class="steps">
+        <li><div><b>Foto en tienda.</b> <span>Set fijo, luz lateral, teléfono en 2x: frente 3/4, lateral y detalle.</span></div></li>
+        <li><div><b>Confirmar ficha.</b> <span>Todo lo marcado en amarillo se revisa en la caja del producto.</span></div></li>
+        <li><div><b>Escena con IA.</b> <span>Nano Banana Pro con el prompt de la ficha y la foto real como referencia.</span></div></li>
+        <li><div><b>Diseño y publicación.</b> <span>Plantilla, copy, [PRECIO], texto alternativo y ubicación «Lider Price».</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="calendario" class="wrap">
+  <div class="sec-head">
+    <h2>Calendario</h2>
+    <p>Cada color es un formato. Toca una publicación para abrir su ficha. La línea roja bajo los días marca la pauta en Meta Ads.</p>
+  </div>
+  <div class="months" id="months"></div>
+  <div class="cal-legend" id="callegend"></div>
+</section>
+
+<section id="publicaciones" class="wrap">
+  <div class="sec-head">
+    <h2>Publicaciones</h2>
+    <p>La ficha completa de cada post. Los botones copian la descripción, los hashtags, el texto alternativo y el prompt de la escena listos para pegar.</p>
+  </div>
+  <div class="panel progress" id="progress"></div>
+  <p class="note-local">Marca cada publicación cuando ya esté publicada. Las marcas se guardan en este navegador y en este dispositivo.</p>
+  <div class="filters">
+    <div class="fgroup"><span class="eyebrow">Estado</span><div class="seg" id="f-est"></div></div>
+    <div class="fgroup"><span class="eyebrow">Mes</span><div class="seg" id="f-mes"></div></div>
+    <div class="fgroup"><span class="eyebrow">Formato</span><div class="seg" id="f-sis"></div></div>
+    <div class="fgroup"><span class="eyebrow">Pilar</span><div class="seg" id="f-dep"></div></div>
+  </div>
+  <p class="result" id="result"></p>
+  <div class="list" id="list"></div>
+</section>
+
+<section id="campana" class="wrap">
+  <div class="sec-head">
+    <h2>Campaña de diciembre</h2>
+    <p>Una publicación pagada aparte del calendario orgánico, con las bicicletas infantiles como héroe. Sin WhatsApp ni delivery, el objetivo es que la gente vaya a la tienda.</p>
+  </div>
+  <div class="campaign">
+    <div class="ribbon" aria-hidden="true"></div>
+    <p class="eyebrow">Meta Ads · Concepto</p>
+    <h3 class="big">Diciembre se vive <em>en bici</em>.</h3>
+    <p style="margin-top:12px;max-width:60ch;color:#E3E1DE">Rin 12, 16 y 20, una para cada edad. DAKA y DIBS venden bicis, pero nadie asesora la talla. Lider Price sí, y te la llevas con Cashea.</p>
+    <div class="cfacts">
+      <div><small>Objetivo en Meta</small><b>Reconocimiento · alcance</b></div>
+      <div><small>Presupuesto</small><b class="num">USD 148 · mínimo 99</b></div>
+      <div><small>Fechas</small><b class="num">24 nov al 23 dic</b></div>
+      <div><small>Ubicación</small><b>12 km desde la calle Velásquez</b></div>
+      <div><small>Edad</small><b class="num">25–55</b></div>
+      <div><small>Producto</small><b>Bicicletas rin 12, 16 y 20 · unas 150 unidades</b></div>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:20px">
+    <div class="panel">
+      <h3>Presupuesto por fase</h3>
+      <div class="timeline">
+        <div class="tl-days" id="tldays" aria-label="Días de pauta activa del 24 de noviembre al 23 de diciembre" style="grid-template-columns:repeat(30,minmax(0,1fr))"></div>
+        <div class="tl-scale" id="tlscale" style="grid-template-columns:repeat(30,minmax(0,1fr))"></div>
+      </div>
+      <div class="phases" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+        <div class="phase"><p class="eyebrow">Fase 1 · 24 nov – 6 dic</p><p class="amt">USD 39<small>3 por día</small></p><p>Black Friday y primeros aguinaldos. Corren la pieza A1 y el reel.</p></div>
+        <div class="phase"><p class="eyebrow">Fase 2 · 7 – 20 dic</p><p class="amt">USD 70<small>5 por día</small></p><p>Semanas de más compra. Queda solo la pieza ganadora.</p></div>
+        <div class="phase"><p class="eyebrow">Fase 3 · 21 – 23 dic</p><p class="amt">USD 39<small>13 por día</small></p><p>Versión «Faltan X días» en historias y reels.</p></div>
+      </div>
+      <p style="margin-top:14px;color:var(--muted);font-size:var(--step--1)">Plan mínimo de 99 USD: 2, 3,5 y 8 USD al día en cada fase. Si la frecuencia pasa de 4, se cambia la pieza. A los 7 días, el anuncio más débil se apaga.</p>
+    </div>
+    <div class="panel">
+      <h3>Reel de 15 segundos · anuncio 2</h3>
+      <div class="story">
+        <div class="shot" data-sys="vend"><p class="t">0–2 s</p><p class="w">¿Qué rin le toca a tu hijo?</p><p class="s">El vendedor junto a las tres bicis</p></div>
+        <div class="shot" data-sys="carr"><p class="t">2–5 s</p><p class="w">Rin 12 · 3 a 5 años</p><p class="s">Señala la más pequeña</p></div>
+        <div class="shot" data-sys="carr"><p class="t">5–8 s</p><p class="w">Rin 16 · 5 a 8 años</p><p class="s">Señala la del lazo rojo</p></div>
+        <div class="shot" data-sys="carr"><p class="t">8–11 s</p><p class="w">Rin 20 · 8 a 11 años</p><p class="s">Señala la más grande</p></div>
+        <div class="shot" data-sys="vend"><p class="t">11–15 s</p><p class="w">Llévatela con <em class="kw">Cashea</em></p><p class="s">Logo · Calle Velásquez, Porlamar</p></div>
+      </div>
+      <p class="eyebrow" style="margin-top:20px">Dirección de arte de la pieza A1</p>
+      <p style="margin-top:6px;color:var(--muted)">Terraza margariteña al atardecer con luces cálidas desenfocadas. La bici rin 16 real a la derecha, con un lazo rojo #E01F36 en el manubrio: es el único rojo grande, marca y regalo a la vez. Titular arriba a la izquierda, etiqueta «Llévatela con Cashea» y franja blanca abajo con logo, tagline y dirección. Sin precio en el diseño y sin niños generados con IA.</p>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:20px">
+    <div class="panel" id="adcopy"></div>
+    <div class="panel">
+      <h3>Cómo se mide</h3>
+      <div class="tablebox" style="margin-top:10px">
+        <table class="kpi">
+          <thead><tr><th>Métrica</th><th>Dónde</th><th>Para qué</th></tr></thead>
+          <tbody>
+            <tr><td>Alcance y frecuencia</td><td>Ads Manager</td><td>Cuántas personas de la zona la vieron</td></tr>
+            <tr><td>CPM</td><td>Ads Manager</td><td>Costo de llegar a esa gente; base para la próxima pauta</td></tr>
+            <tr><td>Clics en el botón y visitas al perfil</td><td>Ads Manager</td><td>Interés directo en ir</td></tr>
+            <tr><td>«Vengo por la bici»</td><td>Hoja en caja</td><td>Visitas reales que trae el anuncio</td></tr>
+            <tr><td>Ventas semanales de bicis</td><td>Caja</td><td>Resultado final, comparado con noviembre</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:12px;color:var(--muted);font-size:var(--step--1)">Botón «Obtener indicaciones» si Ads Manager lo ofrece con la dirección de la página <mark class="v">[verificar]</mark>. Si no, «Más información» hacia el perfil. Incentivo opcional: parche para llanta (ref. AZ2217) a quien diga la frase <mark class="v">[confirmar]</mark>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="historias" class="wrap">
+  <div class="sec-head">
+    <h2>Historias</h2>
+    <p>De 3 a 5 al día de lunes a sábado y 1 o 2 los domingos. Son del momento: se graban con el teléfono en la tienda, sin plantillas y casi sin edición. No cuentan dentro de las 12 publicaciones del feed.</p>
+  </div>
+  <div class="grid-2">
+    <div class="panel">
+      <h3>Cómo se graban</h3>
+      <ul class="rules">
+        <li><b>Teléfono en mano, vertical.</b> Luz natural de la puerta o del pasillo. Nada de trípode ni de set.</li>
+        <li><b>Hablar a cámara</b>, como si le contaras a un vecino. Si sale un error o una risa, se queda.</li>
+        <li><b>Máximo 15 segundos</b> por historia y una sola idea por historia.</li>
+        <li><b>Texto con las letras de Instagram</b>, una línea. Si lleva fondo, rojo #E01F36 con letra blanca.</li>
+        <li><b>Un sticker por historia:</b> encuesta, pregunta, cuenta regresiva, quiz o ubicación.</li>
+        <li><b>Subtítulos automáticos</b> y sonido real de la tienda.</li>
+        <li><b>Ubicación «Lider Price»</b> en la primera historia del día.</li>
+      </ul>
+      <p class="eyebrow" style="margin-top:20px">Así no</p>
+      <ul class="rules no">
+        <li>Plantillas de Canva, piezas del feed rediseñadas, fotos de catálogo o escenas con IA.</li>
+        <li>Más de una línea de texto, cadenas de emojis o gritar ofertas.</li>
+        <li>Clientes sin pedirles permiso. A niños, solo con permiso de sus padres y nunca con nombre.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>El día tipo</h3>
+      <div class="tablebox" style="margin-top:10px"><table class="kpi"><tbody>
+        <tr><td><b>8:00 – 9:00</b></td><td><b>«Ya abrimos»:</b> la santamaría subiendo, el vendedor saludando o el café del equipo.</td></tr>
+        <tr><td><b>11:00 – 1:00</b></td><td><b>Producto o ayuda rápida:</b> un producto en la mano y para qué sirve.</td></tr>
+        <tr><td><b>3:00 – 5:00</b></td><td><b>Interacción:</b> encuesta, pregunta o respuesta a una duda de DM.</td></tr>
+        <tr><td><b>Día de post</b></td><td><b>Compartir el post</b> en la primera hora, con un sticker encima.</td></tr>
+      </tbody></table></div>
+      <h3 style="margin-top:22px">Qué se mide cada lunes</h3>
+      <ol class="steps">
+        <li><div><b>Respuestas a stickers.</b> <span>Encuestas, preguntas y quiz.</span></div></li>
+        <li><div><b>Respuestas por DM.</b> <span>Son consultas de compra.</span></div></li>
+        <li><div><b>Salidas.</b> <span>Si la gente se sale en una historia, esa idea no se repite.</span></div></li>
+        <li><div><b>La serie ganadora.</b> <span>La de más respuestas se repite más la semana siguiente.</span></div></li>
+      </ol>
+    </div>
+  </div>
+  <div class="panel" style="margin-top:20px">
+    <h3>La semana tipo · una serie fija por día</h3>
+    <div class="hweek" id="hweek"></div>
+  </div>
+  <div style="margin-top:20px">
+    <h3>Momentos clave por semana</h3>
+    <div class="hplan" id="hplan"></div>
+  </div>
+  <div class="panel" style="margin-top:20px">
+    <div class="sec-head" style="margin-bottom:0"><h3>Banco de ideas</h3><div class="seg" id="f-hist"></div></div>
+    <div class="hideas" id="hideas"></div>
+  </div>
+</section>
+
+<section id="pendientes" class="wrap">
+  <div class="sec-head">
+    <h2>Pendientes</h2>
+    <p>Lo que hay que confirmar antes de publicar. Marca lo que ya está listo, quita lo que no aplica y agrega lo nuevo. Los cambios se guardan en este navegador y en este dispositivo.</p>
+  </div>
+  <div class="todo-top">
+    <p class="todo-count" id="todo-count"></p>
+    <div class="todo-tools">
+      <button type="button" class="icon-btn" id="todo-clear">Quitar los listos</button>
+      <button type="button" class="icon-btn" id="todo-reset">Restaurar lista original</button>
+    </div>
+  </div>
+  <div class="todo" id="todo" aria-live="polite"></div>
+  <div id="todo-undo"></div>
+  <form class="todo-form" id="todo-form" autocomplete="off">
+    <div class="f"><label class="eyebrow" for="todo-t">Nuevo pendiente</label><input id="todo-t" maxlength="120" placeholder="Ej.: Confirmar fotos de la batidora D World"></div>
+    <div class="f"><label class="eyebrow" for="todo-s">Detalle (opcional)</label><input id="todo-s" maxlength="200" placeholder="Para qué es o de qué depende"></div>
+    <button type="submit" class="btn-add">Agregar</button>
+    <p class="err" id="todo-err" role="alert"></p>
+  </form>
+</section>
+</main>
+
+<footer class="wrap">LIDER PRICE · Plan de contenido 15 nov – 31 dic 2026 · Calle Velásquez, Porlamar · Versión del 5 nov 2026</footer>
+
+<script>
+const DATA = {"posts": [{"n": "01", "fecha": "2026-11-15", "dia": "Domingo", "hora": "9:00 a.m.", "formato": "Reel 9:16", "sys": "vend", "pilar": "Resuelve en casa", "tema": "Que el apagón no te agarre a oscuras", "corto": "Apagones", "principal": "Bombillo recargable LED 15W Smartc + 4 más", "productos": [{"refs": ["LP-000104"], "name": "Bombillo recargable LED 15W Smartc", "stock": 39}, {"refs": ["LP-000102"], "name": "Bombillo recargable 9W", "stock": 15}, {"refs": ["RE2602"], "name": "Bombillo recargable 12W", "stock": 12}, {"refs": ["OF-35", "OF-36", "OF-37"], "name": "Bombillo de emergencia litio 20/30/40W", "stock": 73}, {"refs": ["HS2590"], "name": "Lámpara de emergencia LED", "stock": 13}], "plantilla": "R1", "ficha": "Bombillo recargable: se enrosca en portabombillo estándar [verificar rosca E27], se carga con la corriente y sigue encendido en un corte [verificar autonomía en horas]. Bombillo de emergencia de litio: 20, 30 y 40 W, batería de litio [verificar autonomía y si trae gancho]. Lámpara de emergencia LED: [verificar autonomía y forma de carga].", "laminas": [], "piece": [["Portada", "¿Se fue la luz? Aquí no."], ["Cierre", "Calle Velásquez · Porlamar"]], "diseno": "Portada R1: vendedor en plano medio sosteniendo el bombillo encendido; set en penumbra para que la luz del bombillo sea la única fuente; titular blanco en el tercio inferior sobre velo gris al 35%; pastilla roja con isotipo arriba a la izquierda.", "prompt": "", "desc": "¿Se te fue la luz otra vez? 💡 Con un bombillo recargable la casa sigue iluminada mientras vuelve.\n\nSe enrosca como cualquier bombillo, se carga solo mientras hay luz y, cuando hay corte, sigue prendido. Así cenas, haces las tareas con los niños o atiendes tu negocio sin linterna en la mano.\n\n✔ Bombillos recargables de 9 W, 12 W y 15 W\n✔ Bombillos de emergencia de litio de 20, 30 y 40 W\n✔ Lámparas de emergencia LED\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nMándaselo a quien siempre se queda a oscuras cuando se va la luz.\n\nBombillos recargables y lámparas de emergencia en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Porlamar #IslaDeMargarita #BombilloRecargable #LamparaDeEmergencia", "cta": "Envío", "kw": "bombillo recargable, lámpara de emergencia, se fue la luz, Porlamar", "tags": "#LiderPriceMgta #Porlamar #IslaDeMargarita #BombilloRecargable #LamparaDeEmergencia", "alt": "El vendedor de Lider Price muestra un bombillo recargable encendido durante un corte de luz, junto a un bombillo de emergencia de 40 W y una lámpara LED. Tienda en la calle Velásquez, Porlamar.", "guion": {"idea": "El vendedor demuestra en el set a oscuras que el bombillo recargable sigue prendido cuando se va la luz.", "total": "28", "sonido": "Voz del vendedor con micrófono de solapa y música baja", "tomas": [{"n": 1, "ini": "0", "fin": "2", "d": 2.0, "tipo": "Gancho", "que": "Plano medio del vendedor en el set. Apaga la luz.", "quien": "Vendedor", "dice": "¿Se te fue la luz otra vez?", "pantalla": "¿Se fue la luz?"}, {"n": 2, "ini": "2", "fin": "8", "d": 6.0, "tipo": "Escena", "que": "Primer plano de las manos enroscando el bombillo recargable. Se corta la corriente y sigue encendido.", "quien": "Vendedor", "dice": "Se enrosca como uno normal y cuando se va la luz, sigue prendido.", "pantalla": "Sigue prendido"}, {"n": 3, "ini": "8", "fin": "15", "d": 7.0, "tipo": "Escena", "que": "Plano medio: muestra el bombillo de emergencia de litio de 40 W encendido.", "quien": "Vendedor", "dice": "Este de 40 vatios te alumbra toda la sala o el negocio.", "pantalla": "Hasta 40 W"}, {"n": 4, "ini": "15", "fin": "22", "d": 7.0, "tipo": "Escena", "que": "Detalle de la lámpara de emergencia LED sobre una mesa.", "quien": "Vendedor", "dice": "Y si quieres algo para la mesa, esta lámpara.", "pantalla": "Lámpara de emergencia"}, {"n": 5, "ini": "22", "fin": "28", "d": 6.0, "tipo": "Cierre", "que": "El vendedor a cámara con los tres productos. Cierre con logo.", "quien": "Vendedor", "dice": "Tenemos de 9, 12, 15 y hasta 40 vatios. Vente a la calle Velásquez.", "pantalla": "Calle Velásquez · Porlamar"}], "reglas": ["Grabar con la luz del set apagada de verdad; nada de efecto en edición.", "Mostrar solo las potencias que haya en tienda; si falta una, se quita de la frase."], "comunes": ["El vendedor es la cara de la marca: misma franela de Lider Price en todos los reels. Firma su permiso de imagen antes de grabar.", "Fondo limpio: el set o un pasillo ordenado de una sola categoría, nunca la pared de herramientas saturada.", "Quitar o girar las etiquetas de precio. El precio va solo en la descripción.", "Micrófono de solapa o teléfono cerca; apagar la música de la tienda en las tomas con voz.", "Grabar por partes, en vertical, 4K a 30 fps.", "Subtítulos en todo lo que se dice, con la palabra clave en pastilla roja."]}}, {"n": "02", "fecha": "2026-11-17", "dia": "Martes", "hora": "7:00 p.m.", "formato": "Carrusel 4:5 (5 láminas)", "sys": "carr", "pilar": "Resuelve en casa", "tema": "Luz y fresco en un solo bombillo", "corto": "Bombillo ventilador", "principal": "Bombillo con ventilador 30W + 1 más", "productos": [{"refs": ["4#-1"], "name": "Bombillo con ventilador 30W", "stock": 10}, {"refs": ["L-611", "MLS-6118", "2628-15"], "name": "Ventilador pequeño", "stock": 53}], "plantilla": "T1-T2-T3-T2-T4", "ficha": "Bombillo con ventilador: luz LED de 30 W con ventilador incorporado, se instala en portabombillo estándar [verificar rosca, número de velocidades y si trae control remoto]. Ventiladores pequeños: [verificar tamaño en pulgadas, velocidades y si son de mesa o clip].", "laminas": [{"t": "T1", "tit": "Luz y fresco en un solo bombillo", "apoyo": "Etiqueta roja: Bombillo con ventilador 30 W", "vis": "Escena IA: cocina luminosa de noche con el bombillo real instalado en el techo y las aspas en movimiento. Titular arriba a la izquierda."}, {"t": "T2", "tit": "Bombillo con ventilador", "apoyo": ["Luz LED de 30 W", "Ventilador incorporado", "Rosca estándar [verificar]", "Velocidades y control [verificar]", "Ref. 4#-1"], "vis": "Producto recortado con sombra real en el 55% izquierdo. Specs con íconos de línea a la derecha."}, {"t": "T3", "tit": "Para la cocina, el lavadero o el cuarto de los niños", "apoyo": "", "vis": "Plano contrapicado de una persona cocinando bajo el bombillo, sin cara visible. Frase grande en la zona clara."}, {"t": "T2", "tit": "¿Prefieres uno de mesa?", "apoyo": ["Ventiladores pequeños para escritorio o mesa de noche", "Tamaño y velocidades [verificar]", "Refs. L-611 · MLS-6118 · 2628-15"], "vis": "Los ventiladores pequeños alineados en fila sobre fondo #FEFDFD, misma escala."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["Calle Velásquez, Porlamar", "Lun-Sáb 8am-5pm · Dom hasta 3pm", "Aceptamos divisas, pago móvil, punto y Cashea"], "vis": "Fondo #FEFDFD. Isotipo rojo grande arriba, tagline en Inter ExtraBold negro al centro y bloque de tienda en gris #616161 abajo."}], "piece": [["Lámina 1", "Luz y fresco en un solo bombillo"], ["Lámina 2", "Bombillo con ventilador"], ["Lámina 3", "Para la cocina, el lavadero o el cuarto de los niños"], ["Lámina 4", "¿Prefieres uno de mesa?"], ["Lámina 5", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: escena IA a sangre, bombillo instalado en el techo de una cocina luminosa, ventilador girando (desenfoque de movimiento en las aspas), titular arriba a la izquierda. L2 T2: producto recortado con sombra, 4 specs con íconos de línea. L3 T3: plano contrapicado de la persona cocinando bajo el bombillo, frase grande. L4 T2: los ventiladores pequeños alineados en fila. L5 T4.", "prompt": "SUBJECT: The exact product from the reference image (Bombillo con ventilador 30W), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: Bright Caribbean kitchen at night, the light-bulb fan installed in a ceiling socket, blades in motion blur, steam from a pot, white tiles, light oak cabinets, warm practical light.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "¿La cocina es un horno cuando estás cocinando? 🌬️ Este bombillo te da luz y ventilación a la vez, sin instalar nada nuevo.\n\nSe enrosca en el mismo portabombillo de siempre y tienes luz LED con ventilador incorporado. Perfecto para la cocina, el lavadero o ese cuarto donde no cabe un ventilador de techo.\n\n✔ Bombillo LED de 30 W con ventilador\n✔ Se instala en un portabombillo estándar [verificar rosca]\n✔ [verificar: velocidades y control remoto]\n💲 [PRECIO]\n¿Prefieres uno de mesa? También tenemos ventiladores pequeños para el escritorio o la mesa de noche.\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nGuárdalo para cuando el calor apriete, que en la isla es siempre.\n\nBombillo con ventilador y ventiladores pequeños en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Porlamar #IslaDeMargarita #BombilloConVentilador #Ventiladores", "cta": "Guardado", "kw": "bombillo con ventilador, ventilador pequeño, calor, Margarita", "tags": "#LiderPriceMgta #Porlamar #IslaDeMargarita #BombilloConVentilador #Ventiladores", "alt": "Bombillo LED de 30 W con ventilador incorporado instalado en el techo de una cocina luminosa. Disponible en Lider Price, Porlamar, Isla de Margarita.", "guion": null}, {"n": "03", "fecha": "2026-11-19", "dia": "Jueves", "hora": "7:00 p.m.", "formato": "Carrusel 4:5 (5 láminas)", "sys": "carr", "pilar": "Taller Lider", "tema": "Cuelga todo tú mismo antes de diciembre", "corto": "Taladro", "principal": "Taladro de impacto 650W 110-120V + 3 más", "productos": [{"refs": ["UJDMD15651"], "name": "Taladro de impacto 650W 110-120V", "stock": 12}, {"refs": ["DT05DTB001-1", "4"], "name": "Set brocas 1/4\" 10 pzs", "stock": null}, {"refs": ["JDXTA932"], "name": "Set ramplug verde 60 pzs 7×38 mm", "stock": 11}, {"refs": ["2211V"], "name": "Taladro 600W con percutor (alternativa)", "stock": 10}], "plantilla": "T1-T2-T2-T3-T4", "ficha": "Taladro de impacto: 650 W, 110-120 V, función percutor para concreto y bloque [verificar marca, mandril (¿13 mm?), velocidad variable y reversa]. Set de brocas de 1/4\": 10 piezas [verificar material]. Ramplugs: 60 piezas de 7 × 38 mm. Taladro alternativo: 600 W, con cable y percutor.", "laminas": [{"t": "T1", "tit": "Cuelga todo tú mismo antes de diciembre", "apoyo": "Etiqueta roja: Taladro de impacto 650 W", "vis": "Escena IA: sala blanca con una repisa recién colgada, cortina nueva y el taladro real apoyado en la repisa. Una rama de pino."}, {"t": "T2", "tit": "Taladro de impacto 650 W", "apoyo": ["650 W · 110-120 V", "Función percutor para pared y concreto", "Mandril, velocidad y reversa [verificar]", "Ref. UJDMD15651"], "vis": "Taladro recortado en diagonal a 30°, specs a la derecha."}, {"t": "T2", "tit": "Brocas y ramplugs", "apoyo": ["Set de brocas de 1/4\", 10 piezas", "Set de ramplugs de 60 piezas (7 × 38 mm)", "Refs. DT05DTB001-1/4 · JDXTA932"], "vis": "Brocas en abanico y ramplugs en grilla cenital sobre fondo blanco."}, {"t": "T3", "tit": "Pared, bloque o madera: te decimos qué broca va", "apoyo": "", "vis": "Plano detalle de la broca entrando en la pared, con polvo suspendido."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["Calle Velásquez, Porlamar", "Lun-Sáb 8am-5pm · Dom hasta 3pm", "Aceptamos divisas, pago móvil, punto y Cashea"], "vis": "Fondo #FEFDFD. Isotipo rojo grande arriba, tagline en Inter ExtraBold negro al centro y bloque de tienda en gris #616161 abajo."}], "piece": [["Lámina 1", "Cuelga todo tú mismo antes de diciembre"], ["Lámina 2", "Taladro de impacto 650 W"], ["Lámina 3", "Brocas y ramplugs"], ["Lámina 4", "Pared, bloque o madera: te decimos qué broca va"], ["Lámina 5", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: escena IA, taladro real apoyado sobre una repisa recién colgada en una sala blanca, con una cortina nueva y una rama de pino; titular arriba. L2 T2: taladro recortado en diagonal 30°, specs a la derecha. L3 T2: brocas en abanico y ramplugs en grilla cenital. L4 T3: plano detalle de la broca entrando a la pared con polvo. L5 T4.", "prompt": "SUBJECT: The exact product from the reference image (Taladro de impacto 650W 110-120V), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: Bright living room in Margarita Island, a freshly mounted floating shelf and new curtain rod on a white wall, the impact drill resting on the shelf, a few pine branches, daylight from the left.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "Diciembre llega con cortinas nuevas, repisas y adornos que colgar. 🔩 Con tu propio taladro no tienes que esperar a nadie.\n\nEl taladro de impacto de 650 W perfora concreto, bloque y madera, así que sirve para casi todo lo de la casa. Súmale brocas y ramplugs y tienes todo listo para el fin de semana.\n\n✔ Taladro de impacto de 650 W, 110-120 V\n✔ Función percutor para pared y concreto\n✔ Set de brocas de 1/4\" de 10 piezas\n✔ Set de ramplugs de 60 piezas (7 × 38 mm)\n💲 [PRECIO]\n¿Buscas algo más sencillo? También tenemos el taladro de 600 W con percutor.\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nPregunta en tienda qué broca va con tu pared: te asesoramos.\n\nTaladros, brocas y ramplugs en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Porlamar #FerreteriaMargarita #Taladro #Herramientas", "cta": "Visita", "kw": "taladro de impacto, brocas, ramplug, ferretería en Margarita", "tags": "#LiderPriceMgta #Porlamar #FerreteriaMargarita #Taladro #Herramientas", "alt": "Taladro de impacto de 650 W apoyado sobre una repisa recién colgada en una sala blanca, con brocas y ramplugs. Disponible en Lider Price, Porlamar.", "guion": null}, {"n": "04", "fecha": "2026-11-21", "dia": "Sábado", "hora": "9:00 a.m.", "formato": "Reel 9:16", "sys": "prod", "pilar": "Taller Lider", "tema": "Diciembre se pinta", "corto": "Diciembre se pinta", "principal": "Set rodillo con bandeja 3 pzs + 5 más", "productos": [{"refs": ["JDCB3H39"], "name": "Set rodillo con bandeja 3 pzs", "stock": 10}, {"refs": ["JDCB2929"], "name": "Funda para rodillo 9\"", "stock": 12}, {"refs": ["RH-9950", "9951", "9952", "9953"], "name": "Brochas mango de madera 1\" a 2,5\"", "stock": 11}, {"refs": ["OF-59"], "name": "Tirro de papel", "stock": 12}, {"refs": ["RH-3870"], "name": "a RH-3876 Papel de lija azul P60-P220", "stock": 41}, {"refs": ["THT83406"], "name": "Espátula 1,5\"", "stock": 35}], "plantilla": "R2", "ficha": "Set de rodillo con bandeja: 3 piezas [verificar ancho del rodillo]. Brochas con mango de madera: 1\", 1,5\", 2\" y 2,5\". Lijas: granos 60, 100, 120, 150 y 220. Espátula de 40 mm. Tirro de papel. Nota: el inventario no tiene pintura de pared.", "laminas": [], "piece": [["Portada", "Diciembre se pinta"], ["Cierre", "Tú pones la pintura. Nosotros, todo lo demás."]], "diseno": "Portada R2: plano cenital de la bandeja con el rodillo cargado de pintura blanca sobre fondo infinito blanco, brochas en abanico; titular negro en zona clara superior. Ritmo rápido, un plano por golpe de música.", "prompt": "SUBJECT: The exact product from the reference image (Set rodillo con bandeja 3 pzs), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: top-down shot of the roller tray set and wooden brushes on a light drop cloth, a white wall half-painted in the background, sharp daylight.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "En Venezuela diciembre se recibe con la casa pintada. 🖌️ Antes de la primera hallaca, que la pared esté lista.\n\nAquí tienes todo lo que va antes y durante la pintada: lija para emparejar, tirro para no manchar los marcos, espátula para resanar y el set de rodillo con bandeja para que la pintura rinda.\n\n✔ Set de rodillo con bandeja de 3 piezas\n✔ Brochas con mango de madera de 1\" a 2,5\"\n✔ Tirro de papel y lijas de grano 60 a 220\n✔ Espátula de 1,5\"\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nEtiqueta a quien te va a ayudar a pintar este diciembre.\n\nRodillos, brochas, lijas y tirro para pintar la casa en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Porlamar #IslaDeMargarita #PintarLaCasa #Diciembre", "cta": "Envío (etiquetar)", "kw": "pintar la casa, rodillo, brochas, tirro, lija", "tags": "#LiderPriceMgta #Porlamar #IslaDeMargarita #PintarLaCasa #Diciembre", "alt": "Set de rodillo con bandeja, brochas de madera, lijas y tirro para pintar la casa en diciembre. Disponible en Lider Price, Porlamar.", "guion": {"idea": "Del problema a la pared lista: todo lo que se necesita para pintar la casa en diciembre, menos la pintura.", "total": "13", "sonido": "Sonido real de cada herramienta (lija, tirro, rodillo) y música rítmica; un corte por golpe", "tomas": [{"n": 1, "ini": "0", "fin": "1", "d": 1.0, "tipo": "Gancho", "que": "Macro de una pared descascarada.", "quien": null, "dice": "", "pantalla": "Diciembre se pinta"}, {"n": 2, "ini": "1", "fin": "3", "d": 2.0, "tipo": "Escena", "que": "Mano lijando con la lija azul.", "quien": "Sonido", "dice": "Sonido de lija", "pantalla": "Lija"}, {"n": 3, "ini": "3", "fin": "5", "d": 2.0, "tipo": "Escena", "que": "Tirro de papel sobre el marco de la puerta.", "quien": "Sonido", "dice": "Sonido del tirro", "pantalla": "Tirro"}, {"n": 4, "ini": "5", "fin": "7", "d": 2.0, "tipo": "Escena", "que": "Espátula resanando una grieta.", "quien": null, "dice": "", "pantalla": "Resana"}, {"n": 5, "ini": "7", "fin": "9", "d": 2.0, "tipo": "Escena", "que": "Cenital: el rodillo cargando pintura en la bandeja.", "quien": "Sonido", "dice": "Sonido real del rodillo", "pantalla": "Rodillo"}, {"n": 6, "ini": "9", "fin": "11", "d": 2.0, "tipo": "Escena", "que": "Pasada de rodillo que deja la pared blanca.", "quien": null, "dice": "", "pantalla": ""}, {"n": 7, "ini": "11", "fin": "13", "d": 2.0, "tipo": "Cierre", "que": "Set completo sobre fondo blanco con el logo.", "quien": null, "dice": "", "pantalla": "Tú pones la pintura. Nosotros, todo lo demás."}], "reglas": ["El inventario no tiene pintura de pared: no mostrar galones con marca.", "Un corte por golpe de música."], "comunes": ["Grabar en el set fijo o en la escena real de uso, con luz lateral.", "Productos limpios, sin etiquetas de precio ni plástico brillante.", "Sonido real de cada producto (clic, motor, rodillo) y música en tendencia baja.", "Vertical, 4K a 30 fps; un plano por golpe de música.", "Texto en pantalla en Inter Bold, una palabra o frase corta por plano."]}}, {"n": "05", "fecha": "2026-11-24", "dia": "Martes", "hora": "7:00 p.m.", "formato": "Carrusel 4:5 (5 láminas)", "sys": "carr", "pilar": "Diciembre en Lider", "tema": "La torta negra y el pan de jamón sin cansarte", "corto": "Batidora", "principal": "Batidora de pedestal D World blanco y negro + 1 más", "productos": [{"refs": ["DW-1303", "280W"], "name": "Batidora de pedestal D World blanco y negro", "stock": null}, {"refs": ["SK-133"], "name": "Batidora de mano Sokany blanca (alternativa)", "stock": 20}], "plantilla": "T1-T2-T3-T2-T4", "ficha": "Batidora de pedestal D World: 280 W según el código del inventario [verificar], colores blanco y negro [verificar capacidad del bol, número de velocidades y accesorios: gancho para masa, globo, paleta]. Batidora de mano Sokany: [verificar potencia y velocidades].", "laminas": [{"t": "T1", "tit": "La torta negra sin dolor de brazo", "apoyo": "Etiqueta roja: Batidora de pedestal D World", "vis": "Escena IA: cocina cálida de tarde con la batidora real en el mesón, masa en el bol, molde de torta, frutas confitadas y luces desenfocadas al fondo."}, {"t": "T2", "tit": "Batidora de pedestal D World", "apoyo": ["280 W [verificar]", "Blanco y negro", "Capacidad del bol y velocidades [verificar]", "Accesorios incluidos [verificar]", "Ref. DW-1303/280W"], "vis": "Batidora recortada de perfil con sombra real."}, {"t": "T3", "tit": "Bate, mezcla y amasa mientras tú adelantas lo demás", "apoyo": "", "vis": "Macro del globo batiendo, cámara a la altura del bol."}, {"t": "T2", "tit": "¿Cocinas poco?", "apoyo": ["Batidora de mano Sokany", "Resuelve igual y ocupa menos espacio", "Potencia y velocidades [verificar]", "Ref. SK-133"], "vis": "Batidora de mano recortada, misma posición que la lámina 2."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["Calle Velásquez, Porlamar", "Lun-Sáb 8am-5pm · Dom hasta 3pm", "Aceptamos divisas, pago móvil, punto y Cashea"], "vis": "Fondo #FEFDFD. Isotipo rojo grande arriba, tagline en Inter ExtraBold negro al centro y bloque de tienda en gris #616161 abajo."}], "piece": [["Lámina 1", "La torta negra sin dolor de brazo"], ["Lámina 2", "Batidora de pedestal D World"], ["Lámina 3", "Bate, mezcla y amasa mientras tú adelantas lo demás"], ["Lámina 4", "¿Cocinas poco?"], ["Lámina 5", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: escena IA, batidora real sobre el mesón con masa en el bol, molde de torta y frutas confitadas, luz cálida de tarde; titular arriba. L2 T2: batidora recortada de perfil, specs. L3 T3: macro del globo batiendo, cámara a nivel del bol. L4 T2: batidora de mano. L5 T4.", "prompt": "SUBJECT: The exact product from the reference image (Batidora de pedestal D World blanco y negro), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: Warm afternoon Venezuelan home kitchen in December, the stand mixer on a light countertop with dough in the bowl, a round cake mold, candied fruit and a few pine branches, soft daylight, string-light bokeh far in the background.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "La torta negra y el pan de jamón no se baten solos. 🎂 Este diciembre deja que la batidora haga la fuerza.\n\nLa batidora de pedestal trabaja sola mientras tú adelantas lo demás. Bates, mezclas y amasas sin que se te canse el brazo, y la cocina queda más ordenada.\n\n✔ Batidora de pedestal D World, 280 W [verificar]\n✔ En blanco y negro\n✔ [verificar: capacidad del bol y velocidades]\n✔ [verificar: accesorios incluidos]\n💲 [PRECIO]\n¿Cocinas poco? La batidora de mano Sokany resuelve igual y ocupa menos.\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nGuárdalo en tu lista de diciembre o mándaselo a quien hace la torta en tu familia.\n\nBatidoras de pedestal y de mano en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Porlamar #IslaDeMargarita #Batidora #PanDeJamon", "cta": "Guardado / envío", "kw": "batidora de pedestal, batidora de mano, torta negra, pan de jamón", "tags": "#LiderPriceMgta #Porlamar #IslaDeMargarita #Batidora #PanDeJamon", "alt": "Batidora de pedestal D World sobre un mesón de cocina con masa de torta y frutas confitadas. Disponible en Lider Price, Porlamar.", "guion": null}, {"n": "06", "fecha": "2026-11-27", "dia": "Viernes", "hora": "7:00 a.m.", "formato": "Reel 9:16", "sys": "vend", "pilar": "Tienda y servicio", "tema": "Black Friday con Cashea", "corto": "Black Friday", "principal": "Recorrido: 3000030A-16 Bicicleta rin 16 + 4 más", "productos": [{"refs": [], "name": "Recorrido: 3000030A-16 Bicicleta rin 16", "stock": null}, {"refs": ["DW-1303"], "name": "Batidora de pedestal", "stock": null}, {"refs": ["UJDMD15651"], "name": "Taladro de impacto", "stock": 12}, {"refs": ["LP-000104"], "name": "Bombillo recargable", "stock": 39}, {"refs": ["JDCB3H39"], "name": "Set de rodillo", "stock": 10}], "plantilla": "R1", "ficha": "Sin ficha. [Confirmar con la tienda si hay promoción de Black Friday: productos, porcentaje, fechas y condiciones.]", "laminas": [], "piece": [["Portada", "Black Friday sin letra pequeña"], ["Cierre", "Llévatelo con Cashea [+ promoción, si hay]"]], "diseno": "Portada R1: vendedor de frente con la bici rin 16 al lado y la batidora en el mesón, set limpio; titular blanco sobre velo; pastilla roja. Durante el reel, una pastilla roja con el nombre de cada producto.", "prompt": "", "desc": "Este Black Friday te lo ponemos fácil: lo que tu casa necesita, en un solo sitio y en cuotas con Cashea. 🛒\n\nBicicletas para el Niño Jesús, batidoras para los dulces de diciembre, taladros para colgar los adornos y bombillos recargables para cuando se va la luz. Todo en la calle Velásquez.\n\n✔ Paga con divisas, pago móvil o punto\n✔ O llévatelo hoy y págalo en cuotas con Cashea\n✔ [Si hay promoción de Black Friday: condiciones y fechas aquí]\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nMándaselo a quien está armando la lista de diciembre.\n\nBlack Friday en Porlamar con Cashea: hogar, electrodomésticos y herramientas en Isla de Margarita.\n\n#LiderPriceMgta #BlackFriday #Porlamar #IslaDeMargarita #Cashea", "cta": "Visita / envío", "kw": "Black Friday Margarita, Cashea, tienda en Porlamar", "tags": "#LiderPriceMgta #BlackFriday #Porlamar #IslaDeMargarita #Cashea", "alt": "El vendedor de Lider Price recorre una bicicleta, una batidora, un taladro y un bombillo recargable, y muestra el pago con Cashea en el Black Friday.", "guion": {"idea": "Black Friday sin gritar descuentos: el vendedor recorre cinco productos para la lista de diciembre y cierra con Cashea.", "total": "28", "sonido": "Voz del vendedor y música animada baja", "tomas": [{"n": 1, "ini": "0", "fin": "2", "d": 2.0, "tipo": "Gancho", "que": "El vendedor a cámara en el set limpio.", "quien": "Vendedor", "dice": "Este Black Friday no te voy a gritar descuentos. Te voy a ayudar con la lista.", "pantalla": "Black Friday sin letra pequeña"}, {"n": 2, "ini": "2", "fin": "5", "d": 3.0, "tipo": "Escena", "que": "Bicicleta rin 16 con lazo rojo.", "quien": "Vendedor", "dice": "Para el Niño Jesús, la bici.", "pantalla": "Bicicletas"}, {"n": 3, "ini": "5", "fin": "8", "d": 3.0, "tipo": "Escena", "que": "Batidora de pedestal en el mesón.", "quien": "Vendedor", "dice": "Para los dulces de diciembre, la batidora.", "pantalla": "Batidora"}, {"n": 4, "ini": "8", "fin": "11", "d": 3.0, "tipo": "Escena", "que": "Taladro de impacto en la mano.", "quien": "Vendedor", "dice": "Para colgar los adornos, el taladro.", "pantalla": "Taladro"}, {"n": 5, "ini": "11", "fin": "14", "d": 3.0, "tipo": "Escena", "que": "Bombillo recargable encendido.", "quien": "Vendedor", "dice": "Para cuando se va la luz, el recargable.", "pantalla": "Bombillo recargable"}, {"n": 6, "ini": "14", "fin": "20", "d": 6.0, "tipo": "Escena", "que": "Set de rodillo y brochas.", "quien": "Vendedor", "dice": "Y si vas a pintar, aquí está todo.", "pantalla": "Para pintar"}, {"n": 7, "ini": "20", "fin": "28", "d": 8.0, "tipo": "Cierre", "que": "El vendedor muestra la app de Cashea en el teléfono.", "quien": "Vendedor", "dice": "Todo te lo llevas en cuotas con Cashea. Vente a la calle Velásquez.", "pantalla": "Llévatelo con Cashea [+ promoción, si hay]"}], "reglas": ["Si hay promoción real, se dice tal cual y con fechas. Si no, no se inventa. [confirmar]", "Mostrar la app de Cashea sin datos personales en pantalla."], "comunes": ["El vendedor es la cara de la marca: misma franela de Lider Price en todos los reels. Firma su permiso de imagen antes de grabar.", "Fondo limpio: el set o un pasillo ordenado de una sola categoría, nunca la pared de herramientas saturada.", "Quitar o girar las etiquetas de precio. El precio va solo en la descripción.", "Micrófono de solapa o teléfono cerca; apagar la música de la tienda en las tomas con voz.", "Grabar por partes, en vertical, 4K a 30 fps.", "Subtítulos en todo lo que se dice, con la palabra clave en pastilla roja."]}}, {"n": "07", "fecha": "2026-12-01", "dia": "Martes", "hora": "7:00 p.m.", "formato": "Carrusel 4:5 (5 láminas)", "sys": "carr", "pilar": "Diciembre en Lider", "tema": "Prende diciembre", "corto": "Luces LED", "principal": "Cortina 100 LED multicolor + 3 más", "productos": [{"refs": ["LX-IC100L-M"], "name": "Cortina 100 LED multicolor", "stock": 31}, {"refs": ["LX-100L-B", "LX-100L-G"], "name": "Luces 100 LED verde/azul y verde", "stock": 38}, {"refs": ["LX-L01-60B", "60R", "60G"], "name": "Luces 60 LED blanca/azul, verde/rojo y verde", "stock": 18}, {"refs": ["AZX0402"], "name": "Adornos navideños", "stock": 28}], "plantilla": "T1-T2-T2-T3-T4", "ficha": "Cortina de 100 LED multicolor. Luces de 100 LED en verde/azul y verde/verde. Luces de 60 LED en blanco/azul, verde/rojo y verde/verde. [Verificar en todas: largo en metros, modos de luz, si van a pila o a corriente y si sirven para exterior.] Adornos navideños: [verificar contenido].", "laminas": [{"t": "T1", "tit": "Prende diciembre", "apoyo": "Etiqueta roja: Luces de Navidad LED", "vis": "Escena IA de noche: ventana y balcón de una casa margariteña con la cortina LED encendida, silueta de palmera, cielo azul profundo. Titular en blanco (única excepción por fondo oscuro)."}, {"t": "T2", "tit": "Cortina de 100 LED multicolor", "apoyo": ["100 LED multicolor", "Largo y modos de luz [verificar]", "A pila o a corriente [verificar]", "Ref. LX-IC100L-M"], "vis": "La caja y la tira de luces recortadas sobre fondo #FEFDFD."}, {"t": "T2", "tit": "Luces de 60 y 100 LED", "apoyo": ["100 LED: verde/azul y verde", "60 LED: blanco/azul, verde/rojo y verde", "Uso exterior [verificar]", "Refs. LX-100L-B/G · LX-L01-60B/R/G"], "vis": "Las variantes en fila, con un punto de color y el nombre del color al lado de cada una."}, {"t": "T3", "tit": "Gastan poco y no se calientan", "apoyo": "", "vis": "Macro de los LED encendidos con bokeh cálido."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["Calle Velásquez, Porlamar", "Lun-Sáb 8am-5pm · Dom hasta 3pm", "Aceptamos divisas, pago móvil, punto y Cashea"], "vis": "Fondo #FEFDFD. Isotipo rojo grande arriba, tagline en Inter ExtraBold negro al centro y bloque de tienda en gris #616161 abajo."}], "piece": [["Lámina 1", "Prende diciembre"], ["Lámina 2", "Cortina de 100 LED multicolor"], ["Lámina 3", "Luces de 60 y 100 LED"], ["Lámina 4", "Gastan poco y no se calientan"], ["Lámina 5", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: escena IA de noche, fachada o ventana de casa margariteña con la cortina LED encendida, luz cálida; titular blanco arriba (excepción por fondo oscuro). L2 y L3 T2: cajas y tiras de luces recortadas sobre fondo #FEFDFD, con un punto de color por variante. L4 T3: macro de los LED con bokeh. L5 T4.", "prompt": "SUBJECT: The exact product from the reference image (Cortina 100 LED multicolor), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: Night view of a Margarita Island house window and balcony decorated with the multicolor LED curtain lights from the reference, palm silhouette, deep blue sky, warm glow, no snow.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "Diciembre empieza el día que prendes las luces. ✨ Que este año tu casa sea la que se ve bonita desde la calle.\n\nTenemos luces LED para el arbolito, la ventana, el balcón o el frente de la casa. Gastan poco, no se calientan y vienen en varios colores.\n\n✔ Cortina de 100 LED multicolor\n✔ Luces de 100 LED en verde/azul y verde\n✔ Luces de 60 LED en blanco/azul, verde/rojo y verde\n✔ [verificar: largo, modos de luz, a pila o a corriente]\n✔ Adornos navideños\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nGuarda este post para cuando armes el arbolito.\n\nLuces de Navidad LED y adornos navideños en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Navidad #Porlamar #IslaDeMargarita #LucesDeNavidad", "cta": "Guardado", "kw": "luces de Navidad, luces LED, adornos navideños, Porlamar", "tags": "#LiderPriceMgta #Navidad #Porlamar #IslaDeMargarita #LucesDeNavidad", "alt": "Ventana y balcón de una casa margariteña decorados con una cortina de 100 luces LED multicolor. Luces de Navidad disponibles en Lider Price, Porlamar.", "guion": null}, {"n": "08", "fecha": "2026-12-03", "dia": "Jueves", "hora": "7:00 p.m.", "formato": "Reel 9:16", "sys": "prod", "pilar": "Diciembre en Lider", "tema": "La cocina lista para las hallacas", "corto": "Hallacas", "principal": "Caja de cuchillos 17 pzs + 6 más", "productos": [{"refs": ["LP-000843"], "name": "Caja de cuchillos 17 pzs", "stock": 11}, {"refs": ["AZ6711"], "name": "Tabla de picar", "stock": 16}, {"refs": ["THSCRS822251"], "name": "Tijera de cocina acero inox. 9\"", "stock": 11}, {"refs": ["AM-444"], "name": "Bol de ensalada 3 pzs 24/26/28 cm", "stock": 10}, {"refs": ["LP-000836"], "name": "Rollo de aluminio Super Foil", "stock": 18}, {"refs": ["LP-000404"], "name": "Cucharón de madera", "stock": 16}, {"refs": ["QB", "2174-2006"], "name": "Colador metálico 20 cm", "stock": null}], "plantilla": "R2", "ficha": "Caja de cuchillos de 17 piezas [verificar contenido y material]. Tijera de cocina de acero inoxidable de 225 mm (9\"). Juego de 3 bowls de 24, 26 y 28 cm [verificar material]. Rollo de aluminio Super Foil [verificar medida]. Colador metálico de 20 cm.", "laminas": [], "piece": [["Portada", "¿Este año te toca la hallaca?"], ["Cierre", "La cocina lista para las hallacas"]], "diseno": "Portada R2: mesa de madera clara con hojas de plátano, bowls con guiso y la caja de cuchillos abierta, luz de mañana; titular negro arriba. Planos cenitales y sonido real de cuchillo.", "prompt": "SUBJECT: The exact product from the reference image (Caja de cuchillos 17 pzs), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: top-down shot of a light wooden table prepared for making hallacas, plantain leaves, three bowls with stew and colorful vegetables, the knife set and cutting board, morning daylight, family hands at the edge of the frame without faces.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "¿Este año te toca hacer las hallacas? 🫔 Que la cocina esté lista antes de que llegue la familia a ayudar.\n\nPicar el guiso, separar los ingredientes, cortar las hojas y guardar lo que sobra. Para cada paso hay una herramienta que te ahorra tiempo.\n\n✔ Caja de cuchillos de 17 piezas\n✔ Tabla de picar\n✔ Tijera de cocina de acero inoxidable de 9\"\n✔ Juego de 3 bowls de 24, 26 y 28 cm\n✔ Papel de aluminio, cucharones y coladores\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nEtiqueta a quien te acompaña cada año en las hallacas.\n\nUtensilios de cocina para las hallacas en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Hallacas #Porlamar #IslaDeMargarita #UtensiliosDeCocina", "cta": "Envío (etiquetar)", "kw": "hallacas, cuchillos, tabla de picar, utensilios de cocina", "tags": "#LiderPriceMgta #Hallacas #Porlamar #IslaDeMargarita #UtensiliosDeCocina", "alt": "Mesa de madera preparada para hacer hallacas, con caja de cuchillos, tabla de picar, bowls y tijera de cocina. Disponible en Lider Price, Porlamar.", "guion": {"idea": "La mesa de las hallacas armada paso a paso con las herramientas de cocina de la tienda.", "total": "14", "sonido": "ASMR de cocina (cuchillo, bowls, aluminio) y gaita suave de fondo", "tomas": [{"n": 1, "ini": "0", "fin": "1", "d": 1.0, "tipo": "Gancho", "que": "Mesa de madera clara con hojas de plátano.", "quien": null, "dice": "", "pantalla": "¿Este año te toca la hallaca?"}, {"n": 2, "ini": "1", "fin": "4", "d": 3.0, "tipo": "Escena", "que": "Cuchillo picando pimentón en la tabla.", "quien": "Sonido", "dice": "Sonido real del cuchillo", "pantalla": "Pica"}, {"n": 3, "ini": "4", "fin": "7", "d": 3.0, "tipo": "Escena", "que": "Los tres bowls se llenan uno tras otro con el guiso.", "quien": null, "dice": "", "pantalla": "Separa"}, {"n": 4, "ini": "7", "fin": "9", "d": 2.0, "tipo": "Escena", "que": "La tijera de cocina corta la hoja.", "quien": "Sonido", "dice": "Sonido de la tijera", "pantalla": "Corta"}, {"n": 5, "ini": "9", "fin": "11", "d": 2.0, "tipo": "Escena", "que": "Papel de aluminio cubriendo el guiso.", "quien": "Sonido", "dice": "Sonido del aluminio", "pantalla": "Guarda"}, {"n": 6, "ini": "11", "fin": "14", "d": 3.0, "tipo": "Cierre", "que": "Flat lay de todos los productos sobre fondo blanco. Logo y dirección.", "quien": null, "dice": "", "pantalla": "La cocina lista para las hallacas"}], "reglas": ["Hojas de plátano y guiso son utilería: no se venden en la tienda y no se nombran.", "Sonido real de cocina, sin voz."], "comunes": ["Grabar en el set fijo o en la escena real de uso, con luz lateral.", "Productos limpios, sin etiquetas de precio ni plástico brillante.", "Sonido real de cada producto (clic, motor, rodillo) y música en tendencia baja.", "Vertical, 4K a 30 fps; un plano por golpe de música.", "Texto en pantalla en Inter Bold, una palabra o frase corta por plano."]}}, {"n": "09", "fecha": "2026-12-05", "dia": "Sábado", "hora": "9:00 a.m.", "formato": "Reel 9:16", "sys": "vend", "pilar": "Diciembre en Lider", "tema": "¿Qué rin le toca a tu hijo?", "corto": "Guía de bicis", "principal": "Bicicleta rin 12 + 2 más", "productos": [{"refs": ["KQ-13-12", "KQ-06-12", "3000053-12"], "name": "Bicicleta rin 12", "stock": 62}, {"refs": ["KQ-13-16", "3000053-16", "3000030A-16"], "name": "Bicicleta rin 16", "stock": 74}, {"refs": ["3000030A-20"], "name": "Bicicleta rin 20", "stock": 16}], "plantilla": "R1", "ficha": "Guía orientativa: rin 12 para 3 a 5 años (95-110 cm); rin 16 para 5 a 8 años (110-125 cm); rin 20 para 8 a 11 años (125-140 cm). [Verificar por modelo: si traen rueditas de apoyo, frenos, cesta y colores.]", "laminas": [], "piece": [["Portada", "¿Qué rin le toca a tu hijo?"], ["Cierre", "Escribe BICI por DM"]], "diseno": "Portada R1: vendedor de pie junto a las tres bicis en fila, de menor a mayor, con lazo rojo #E01F36 en la de rin 16; set limpio; titular blanco; pastilla roja. Este reel se reutiliza como segundo anuncio (sección 9).", "prompt": "", "desc": "Antes de comprar la bicicleta del Niño Jesús, mira esto. 🚲 Una bici del tamaño correcto se disfruta más y es más segura.\n\nLa medida que importa es el rin, y depende de la estatura del niño. El truco: sentado en la bici, tiene que tocar el piso con la punta de los pies.\n\n✔ Rin 12: de 3 a 5 años, aprox. 95 a 110 cm\n✔ Rin 16: de 5 a 8 años, aprox. 110 a 125 cm\n✔ Rin 20: de 8 a 11 años, aprox. 125 a 140 cm\n💲 [PRECIO]\nLlévatela con Cashea.\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nGuarda esta guía y escríbenos \"BICI\" por DM: te decimos cuál le toca.\n\nBicicletas para niños rin 12, 16 y 20 en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #BicicletasParaNiños #NiñoJesus #Porlamar #IslaDeMargarita", "cta": "Guardado / DM", "kw": "bicicletas para niños, rin 12, rin 16, rin 20, Niño Jesús", "tags": "#LiderPriceMgta #BicicletasParaNiños #NiñoJesus #Porlamar #IslaDeMargarita", "alt": "El vendedor de Lider Price junto a tres bicicletas infantiles rin 12, 16 y 20 explica qué talla corresponde a cada edad.", "guion": {"idea": "Guía de tallas de bicicleta por edad y estatura, explicada por el vendedor. Es también el anuncio 2 de Meta Ads.", "total": "30", "sonido": "Voz del vendedor y música navideña suave", "tomas": [{"n": 1, "ini": "0", "fin": "2", "d": 2.0, "tipo": "Gancho", "que": "El vendedor junto a las tres bicis en fila, de menor a mayor.", "quien": "Vendedor", "dice": "Antes de comprar la bici del Niño Jesús, mira esto.", "pantalla": "¿Qué rin le toca a tu hijo?"}, {"n": 2, "ini": "2", "fin": "7", "d": 5.0, "tipo": "Escena", "que": "Señala la bici rin 12.", "quien": "Vendedor", "dice": "La rin 12 es para niños de 3 a 5 años, de 95 a 110 centímetros más o menos.", "pantalla": "Rin 12 · 3 a 5 años · 95–110 cm"}, {"n": 3, "ini": "7", "fin": "12", "d": 5.0, "tipo": "Escena", "que": "Señala la bici rin 16.", "quien": "Vendedor", "dice": "La 16, de 5 a 8 años, de 110 a 125.", "pantalla": "Rin 16 · 5 a 8 años · 110–125 cm"}, {"n": 4, "ini": "12", "fin": "17", "d": 5.0, "tipo": "Escena", "que": "Señala la bici rin 20.", "quien": "Vendedor", "dice": "Y la 20, de 8 a 11 años, de 125 a 140.", "pantalla": "Rin 20 · 8 a 11 años · 125–140 cm"}, {"n": 5, "ini": "17", "fin": "23", "d": 6.0, "tipo": "Escena", "que": "El vendedor marca con la mano la altura del asiento sobre el piso.", "quien": "Vendedor", "dice": "El truco: sentado, tiene que tocar el piso con la punta de los pies.", "pantalla": "Punta de los pies en el piso"}, {"n": 6, "ini": "23", "fin": "30", "d": 7.0, "tipo": "Cierre", "que": "El vendedor a cámara con la bici rin 16 al lado.", "quien": "Vendedor", "dice": "Escríbenos BICI por DM o vente con la estatura de tu hijo. Y te la llevas con Cashea.", "pantalla": "Escribe BICI por DM"}], "reglas": ["Sin caras de niños: la altura se muestra con la mano o con el asiento.", "Grabar además una versión de 15 s para la pauta."], "comunes": ["El vendedor es la cara de la marca: misma franela de Lider Price en todos los reels. Firma su permiso de imagen antes de grabar.", "Fondo limpio: el set o un pasillo ordenado de una sola categoría, nunca la pared de herramientas saturada.", "Quitar o girar las etiquetas de precio. El precio va solo en la descripción.", "Micrófono de solapa o teléfono cerca; apagar la música de la tienda en las tomas con voz.", "Grabar por partes, en vertical, 4K a 30 fps.", "Subtítulos en todo lo que se dice, con la palabra clave en pastilla roja."]}}, {"n": "10", "fecha": "2026-12-08", "dia": "Martes", "hora": "7:00 p.m.", "formato": "Carrusel 4:5 (7 láminas)", "sys": "carr", "pilar": "Resuelve en casa", "tema": "Regalos que sí se usan", "corto": "Regalos Sokany", "principal": "Waflera circular Sokany + 4 más", "productos": [{"refs": ["SK-08006"], "name": "Waflera circular Sokany", "stock": 10}, {"refs": ["SK-133"], "name": "Batidora de mano Sokany", "stock": 20}, {"refs": ["SK-19025"], "name": "Pesa digital de cocina 5 kg Sokany", "stock": 10}, {"refs": ["SK-3026"], "name": "Molinillo Sokany", "stock": 10}, {"refs": ["SK-2211"], "name": "Secador de pelo Sokany", "stock": 13}], "plantilla": "T1-T2×5-T4", "ficha": "Waflera circular [verificar potencia y antiadherente]. Batidora de mano [verificar potencia y velocidades]. Pesa digital de cocina de hasta 5 kg [verificar precisión y pilas]. Molinillo [verificar capacidad]. Secador de pelo [verificar potencia y temperaturas].", "laminas": [{"t": "T1", "tit": "Regalos que sí se usan", "apoyo": "Etiqueta roja: Electrodomésticos Sokany", "vis": "Escena IA: los 5 Sokany reales sobre un mesón claro con papel kraft y un lazo rojo. Titular arriba."}, {"t": "T2", "tit": "Waflera circular", "apoyo": ["Desayunos de domingo en minutos", "Potencia y antiadherente [verificar]", "Ref. SK-08006"], "vis": "Un producto por lámina, siempre en la misma posición y escala."}, {"t": "T2", "tit": "Batidora de mano", "apoyo": ["Para tortas y merengues", "Potencia y velocidades [verificar]", "Ref. SK-133"], "vis": "Misma composición que la lámina 2."}, {"t": "T2", "tit": "Pesa digital de cocina", "apoyo": ["Hasta 5 kg", "Recetas exactas", "Precisión y pilas [verificar]", "Ref. SK-19025"], "vis": "Misma composición que la lámina 2."}, {"t": "T2", "tit": "Molinillo", "apoyo": ["Café, especias y granos", "Capacidad [verificar]", "Ref. SK-3026"], "vis": "Misma composición que la lámina 2."}, {"t": "T2", "tit": "Secador de pelo", "apoyo": ["Listo para las fiestas", "Potencia y temperaturas [verificar]", "Ref. SK-2211"], "vis": "Misma composición que la lámina 2."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["Calle Velásquez, Porlamar", "Lun-Sáb 8am-5pm · Dom hasta 3pm", "Aceptamos divisas, pago móvil, punto y Cashea"], "vis": "Fondo #FEFDFD. Isotipo rojo grande arriba, tagline en Inter ExtraBold negro al centro y bloque de tienda en gris #616161 abajo."}], "piece": [["Lámina 1", "Regalos que sí se usan"], ["Lámina 2", "Waflera circular"], ["Lámina 3", "Batidora de mano"], ["Lámina 4", "Pesa digital de cocina"], ["Lámina 5", "Molinillo"], ["Lámina 6", "Secador de pelo"], ["Lámina 7", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: escena IA, los 5 Sokany sobre un mesón claro con papel de regalo kraft y lazo rojo; titular arriba. L2 a L6 T2: un producto por lámina, siempre en la misma posición y escala, para que al deslizar se vea como catálogo. L7 T4.", "prompt": "SUBJECT: The exact product from the reference image (Waflera circular Sokany), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: Light kitchen counter with the five Sokany small appliances from the references arranged as gifts, kraft wrapping paper, one red ribbon, pine branch, soft daylight, catalog look.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "¿No sabes qué regalar esta Navidad? 🎁 Regala algo que se use todos los días, no algo que se quede en la gaveta.\n\nElectrodomésticos pequeños Sokany para quien vive en la cocina o siempre anda arreglándose para salir.\n\n✔ Waflera circular: desayunos de domingo en minutos\n✔ Batidora de mano: tortas y merengues\n✔ Pesa digital de cocina de 5 kg: recetas exactas\n✔ Molinillo: café, especias y granos\n✔ Secador de pelo: listo para las fiestas\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nMándaselo a quien todavía no tiene el regalo de mamá.\n\nElectrodomésticos pequeños Sokany para regalar en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #RegalosDeNavidad #Porlamar #IslaDeMargarita #Electrodomesticos", "cta": "Envío", "kw": "regalos de Navidad, electrodomésticos pequeños, Sokany, waflera", "tags": "#LiderPriceMgta #RegalosDeNavidad #Porlamar #IslaDeMargarita #Electrodomesticos", "alt": "Waflera, batidora de mano, pesa digital, molinillo y secador de pelo Sokany envueltos como regalo de Navidad. Disponibles en Lider Price, Porlamar.", "guion": null}, {"n": "11", "fecha": "2026-12-10", "dia": "Jueves", "hora": "7:00 p.m.", "formato": "Carrusel 4:5 (5 láminas)", "sys": "carr", "pilar": "Resuelve en casa", "tema": "La limpieza grande antes de las visitas", "corto": "Limpieza", "principal": "Mopa 250 g + palo de madera + 3 más", "productos": [{"refs": ["OF-4"], "name": "Mopa 250 g + palo de madera", "stock": 10}, {"refs": ["DLI-3651"], "name": "Kit escoba con pala", "stock": 10}, {"refs": ["ALK8429"], "name": "Perfil esponja Alklin multiuso con cabo", "stock": 10}, {"refs": ["HS2619"], "name": "Balde rojo plástico grande", "stock": 33}], "plantilla": "T1-T2-T2-T3-T4", "ficha": "Mopa de 250 g con palo de madera. Kit de escoba con pala. Esponja multiuso Alklin con cabo [verificar largo del cabo]. Balde plástico grande [verificar litros].", "laminas": [{"t": "T1", "tit": "La limpieza grande, en la mitad del tiempo", "apoyo": "Etiqueta roja: Limpieza del hogar", "vis": "Escena IA: sala blanca recién limpiada, piso de cerámica brillante, mopa y escoba apoyadas en la pared. El balde rojo es el único rojo de la escena."}, {"t": "T2", "tit": "Mopa y escoba con pala", "apoyo": ["Mopa de 250 g con palo de madera", "Kit de escoba con pala", "Refs. OF-4 · DLI-3651"], "vis": "Productos recortados de pie, en escala real entre sí."}, {"t": "T2", "tit": "Esponja con cabo y balde", "apoyo": ["Esponja multiuso Alklin con cabo", "Largo del cabo [verificar]", "Balde plástico grande, litros [verificar]", "Refs. ALK8429 · HS2619"], "vis": "Misma composición que la lámina 2."}, {"t": "T3", "tit": "Rincones altos sin subirte a una silla", "apoyo": "", "vis": "La esponja con cabo alcanzando una esquina alta del techo."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["Calle Velásquez, Porlamar", "Lun-Sáb 8am-5pm · Dom hasta 3pm", "Aceptamos divisas, pago móvil, punto y Cashea"], "vis": "Fondo #FEFDFD. Isotipo rojo grande arriba, tagline en Inter ExtraBold negro al centro y bloque de tienda en gris #616161 abajo."}], "piece": [["Lámina 1", "La limpieza grande, en la mitad del tiempo"], ["Lámina 2", "Mopa y escoba con pala"], ["Lámina 3", "Esponja con cabo y balde"], ["Lámina 4", "Rincones altos sin subirte a una silla"], ["Lámina 5", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: escena IA de sala blanca recién limpiada, piso brillante, mopa y escoba apoyadas con naturalidad; titular arriba. L2 y L3 T2: productos recortados de pie, en escala real entre sí. L4 T3: esponja con cabo alcanzando una esquina alta. L5 T4. El balde es rojo: que sea el único rojo de la escena.", "prompt": "SUBJECT: The exact product from the reference image (Mopa 250 g + palo de madera), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: Bright freshly cleaned living room in a Margarita Island home, glossy light ceramic floor, the mop and broom-with-dustpan set leaning against a white wall, the red bucket as the only red element, morning sun.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "Antes de que lleguen las visitas, toca la limpieza grande. 🧹 Con las herramientas correctas se hace en la mitad del tiempo.\n\nMopa para pasar el coleto sin agacharte, escoba con pala para no dejar rastro, esponja con cabo para paredes y rincones altos, y el balde grande para todo lo demás.\n\n✔ Mopa de 250 g con palo de madera\n✔ Kit de escoba con pala\n✔ Esponja multiuso Alklin con cabo\n✔ Balde plástico grande\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nGuárdalo para el sábado de limpieza.\n\nArtículos de limpieza para el hogar en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #LimpiezaDelHogar #Porlamar #IslaDeMargarita #Diciembre", "cta": "Guardado", "kw": "artículos de limpieza, mopa, escoba, coleto", "tags": "#LiderPriceMgta #LimpiezaDelHogar #Porlamar #IslaDeMargarita #Diciembre", "alt": "Sala blanca recién limpiada con una mopa, una escoba con pala, una esponja con cabo y un balde rojo. Artículos de limpieza en Lider Price, Porlamar.", "guion": null}, {"n": "12", "fecha": "2026-12-12", "dia": "Sábado", "hora": "9:00 a.m.", "formato": "Reel 9:16", "sys": "prod", "pilar": "Resuelve en casa", "tema": "El baño listo para las visitas", "corto": "Baño listo", "principal": "Cortina de baño estampada + 5 más", "productos": [{"refs": ["AZ846"], "name": "Cortina de baño estampada", "stock": 16}, {"refs": ["TP-201"], "name": "Dispensador de jabón Sabhoon 500 ml", "stock": 12}, {"refs": ["TP-1360"], "name": "Pompa de baño grande", "stock": 13}, {"refs": ["AZ1887"], "name": "Papelera de huecos", "stock": 23}, {"refs": ["XR2177"], "name": "Espejo LED recargable", "stock": 13}, {"refs": ["AZ5768"], "name": "Dispensador spray Fashion", "stock": 19}], "plantilla": "R2", "ficha": "Cortina de baño estampada [verificar medidas y si trae ganchos]. Dispensador de jabón de 500 ml. Pompa de baño grande. Papelera de huecos. Espejo LED recargable [verificar tamaño y autonomía].", "laminas": [], "piece": [["Portada", "Tu baño, listo para las visitas"], ["Cierre", "Calle Velásquez · Porlamar"]], "diseno": "Portada R2: baño blanco terminado con la cortina estampada y el espejo LED encendido; titular negro arriba. Reel de transformación: el antes y el después con corte en chasquido.", "prompt": "SUBJECT: The exact product from the reference image (Cortina de baño estampada), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: clean white bathroom in a Caribbean home, the patterned shower curtain from the reference, soap dispenser and small bin on a light counter, LED mirror glowing, plant, daylight.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "Las visitas de diciembre siempre pasan por el baño. 🛁 Con cuatro cambios se ve como nuevo, sin remodelar.\n\nCortina nueva, dispensador de jabón, papelera y un espejo con luz. Son detalles pequeños que cambian cómo se ve y se siente tu baño.\n\n✔ Cortina de baño estampada\n✔ Dispensador de jabón de 500 ml\n✔ Pompa de baño grande y papelera\n✔ Espejo LED recargable\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nMándaselo a quien recibe a la familia este diciembre.\n\nAccesorios de baño en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #AccesoriosDeBaño #Porlamar #IslaDeMargarita #DecoracionDelHogar", "cta": "Envío", "kw": "accesorios de baño, cortina de baño, dispensador de jabón", "tags": "#LiderPriceMgta #AccesoriosDeBaño #Porlamar #IslaDeMargarita #DecoracionDelHogar", "alt": "Baño blanco con cortina estampada, dispensador de jabón, papelera y espejo LED encendido. Accesorios de baño en Lider Price, Porlamar.", "guion": {"idea": "Transformación del baño en 12 segundos con cuatro accesorios.", "total": "12", "sonido": "Chasquido en el corte y música ligera", "tomas": [{"n": 1, "ini": "0", "fin": "1", "d": 1.0, "tipo": "Gancho", "que": "Plano fijo del baño «antes», con la cortina vieja.", "quien": null, "dice": "", "pantalla": "Tu baño, listo para las visitas"}, {"n": 2, "ini": "1", "fin": "2", "d": 1.0, "tipo": "Escena", "que": "Chasquido de dedos y corte.", "quien": "Sonido", "dice": "Chasquido", "pantalla": ""}, {"n": 3, "ini": "2", "fin": "4", "d": 2.0, "tipo": "Escena", "que": "Stop motion: entra la cortina estampada.", "quien": null, "dice": "", "pantalla": "Cortina"}, {"n": 4, "ini": "4", "fin": "6", "d": 2.0, "tipo": "Escena", "que": "Stop motion: aparece el dispensador de jabón.", "quien": null, "dice": "", "pantalla": "Jabón"}, {"n": 5, "ini": "6", "fin": "8", "d": 2.0, "tipo": "Escena", "que": "Stop motion: la pompa y la papelera.", "quien": null, "dice": "", "pantalla": "Papelera"}, {"n": 6, "ini": "8", "fin": "10", "d": 2.0, "tipo": "Escena", "que": "El espejo LED se enciende.", "quien": null, "dice": "", "pantalla": "Luz"}, {"n": 7, "ini": "10", "fin": "12", "d": 2.0, "tipo": "Cierre", "que": "Plano final del baño «después». Logo y dirección.", "quien": null, "dice": "", "pantalla": "Calle Velásquez · Porlamar"}], "reglas": ["Usar un baño real, de alguien del equipo o de la tienda, con permiso.", "El antes y el después con la cámara fija en el mismo punto."], "comunes": ["Grabar en el set fijo o en la escena real de uso, con luz lateral.", "Productos limpios, sin etiquetas de precio ni plástico brillante.", "Sonido real de cada producto (clic, motor, rodillo) y música en tendencia baja.", "Vertical, 4K a 30 fps; un plano por golpe de música.", "Texto en pantalla en Inter Bold, una palabra o frase corta por plano."]}}, {"n": "13", "fecha": "2026-12-15", "dia": "Martes", "hora": "7:00 p.m.", "formato": "Carrusel 4:5 (6 láminas)", "sys": "carr", "pilar": "Taller Lider", "tema": "El regalo para quien todo lo arregla", "corto": "Herramientas", "principal": "Pinza amperimétrica 600V + 5 más", "productos": [{"refs": ["TMT42002"], "name": "Pinza amperimétrica 600V", "stock": 10}, {"refs": ["THT101126"], "name": "Llave ajustable encauchetada 12\"", "stock": 12}, {"refs": ["DT020194"], "name": "Set de llave torx 7 pzs 2 en 1 con mango", "stock": 12}, {"refs": ["UTAC270631"], "name": "Juego de copas magnéticas 3 pzs 1/4\"", "stock": 10}, {"refs": ["TMT126101"], "name": "Cinta métrica 10 m × 25 mm", "stock": 11}, {"refs": ["TAC16PZ213"], "name": "Set de puntas destornillador 20 pzs", "stock": 12}], "plantilla": "T1-T2×4-T4", "ficha": "Pinza amperimétrica de hasta 600 V [verificar funciones: AC/DC, continuidad]. Llave ajustable encauchetada de 12\". Set de llaves torx de 7 piezas, 2 en 1, con mango. Juego de copas magnéticas de 3 piezas, 1/4\". Cinta métrica de 10 m × 25 mm. Set de 20 puntas de destornillador.", "laminas": [{"t": "T1", "tit": "El regalo para quien todo lo arregla", "apoyo": "Etiqueta roja: Herramientas para regalar", "vis": "Escena IA: mesa de trabajo de madera clara con las herramientas reales envueltas a medias en papel kraft con un lazo rojo."}, {"t": "T2", "tit": "Pinza amperimétrica", "apoyo": ["Mide hasta 600 V", "Funciones AC/DC y continuidad [verificar]", "Ref. TMT42002"], "vis": "Cada herramienta recortada en diagonal, misma escala y posición."}, {"t": "T2", "tit": "Llave ajustable encauchetada", "apoyo": ["12 pulgadas", "Mango encauchetado", "Ref. THT101126"], "vis": "Misma composición que la lámina 2."}, {"t": "T2", "tit": "Torx y copas magnéticas", "apoyo": ["Set de llaves torx de 7 piezas, 2 en 1, con mango", "Juego de copas magnéticas de 3 piezas, 1/4\"", "Refs. DT020194 · UTAC270631"], "vis": "Misma composición que la lámina 2."}, {"t": "T2", "tit": "Cinta métrica y puntas", "apoyo": ["Cinta métrica de 10 m × 25 mm", "Set de 20 puntas de destornillador", "Refs. TMT126101 · TAC16PZ213"], "vis": "Misma composición que la lámina 2."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["Calle Velásquez, Porlamar", "Lun-Sáb 8am-5pm · Dom hasta 3pm", "Aceptamos divisas, pago móvil, punto y Cashea"], "vis": "Fondo #FEFDFD. Isotipo rojo grande arriba, tagline en Inter ExtraBold negro al centro y bloque de tienda en gris #616161 abajo."}], "piece": [["Lámina 1", "El regalo para quien todo lo arregla"], ["Lámina 2", "Pinza amperimétrica"], ["Lámina 3", "Llave ajustable encauchetada"], ["Lámina 4", "Torx y copas magnéticas"], ["Lámina 5", "Cinta métrica y puntas"], ["Lámina 6", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: escena IA, mesa de trabajo de madera clara con las herramientas reales envueltas a medias en papel kraft con lazo rojo; titular arriba. L2 a L5 T2: cada herramienta recortada en diagonal, misma escala y posición. L6 T4.", "prompt": "SUBJECT: The exact product from the reference image (Pinza amperimétrica 600V), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: Light wooden workbench in a tidy home garage, the tools from the references partially wrapped in kraft paper with one red ribbon, pegboard softly out of focus, daylight.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "En toda familia hay uno que arregla todo. 🔧 Este diciembre, regálale algo que de verdad va a usar.\n\nHerramientas que se quedan en la caja de por vida, para quien arregla la casa, el carro o vive de su oficio.\n\n✔ Pinza amperimétrica de 600 V\n✔ Llave ajustable encauchetada de 12\"\n✔ Set de llaves torx de 7 piezas, 2 en 1\n✔ Juego de copas magnéticas de 3 piezas\n✔ Cinta métrica de 10 m y set de 20 puntas\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nEtiqueta a quien siempre llega con la caja de herramientas.\n\nHerramientas para regalar en Navidad en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Herramientas #FerreteriaMargarita #Porlamar #RegalosDeNavidad", "cta": "Envío (etiquetar)", "kw": "herramientas, regalo para papá, ferretería en Margarita", "tags": "#LiderPriceMgta #Herramientas #FerreteriaMargarita #Porlamar #RegalosDeNavidad", "alt": "Pinza amperimétrica, llave ajustable, llaves torx, copas magnéticas y cinta métrica envueltas a medias como regalo sobre una mesa de trabajo. Lider Price, Porlamar.", "guion": null}, {"n": "14", "fecha": "2026-12-17", "dia": "Jueves", "hora": "7:00 p.m.", "formato": "Reel 9:16", "sys": "vend", "pilar": "Diciembre en Lider", "tema": "Los postres de diciembre", "corto": "Postres", "principal": "Bandeja para postres y dulces 3 pisos + 5 más", "productos": [{"refs": ["LP-000857"], "name": "Bandeja para postres y dulces 3 pisos", "stock": 80}, {"refs": ["LP-000859"], "name": "Bandeja para torta 2 pisos", "stock": 17}, {"refs": ["LP-000933"], "name": "Set de 23 boquillas", "stock": 13}, {"refs": ["LP-000937"], "name": "Manga pastelera 8 boquillas", "stock": 11}, {"refs": ["LP-000530"], "name": "Molde circular desarmable 22 cm", "stock": 16}, {"refs": ["LP-000985"], "name": "Kit cuchillo para torta con espátula gold", "stock": 15}], "plantilla": "R1", "ficha": "Bandeja para postres de 3 pisos [verificar material y diámetros]. Set de 23 boquillas. Manga pastelera con 8 boquillas. Molde circular desarmable de 22 cm. Kit de cuchillo para torta con espátula dorada.", "laminas": [], "piece": [["Portada", "¿Tú llevas el postre?"], ["Cierre", "Calle Velásquez · Porlamar"]], "diseno": "Portada R1: vendedor sosteniendo la bandeja de 3 pisos con dulces; set limpio; titular blanco; pastilla roja. Planos detalle de la manga decorando una torta.", "prompt": "", "desc": "¿En tu familia tú eres quien lleva el postre? 🍰 Que este año llegue a la mesa como de pastelería.\n\nMoldes desarmables para que la torta salga entera, mangas y boquillas para decorar y bandejas de varios pisos para lucir los dulces en la cena de Navidad.\n\n✔ Bandeja para postres de 3 pisos\n✔ Set de 23 boquillas y mangas pasteleras\n✔ Molde desarmable de 22 cm\n✔ Kit de cuchillo para torta con espátula dorada\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nEtiqueta a quien hace los postres en tu familia.\n\nArtículos de repostería en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Reposteria #Porlamar #IslaDeMargarita #PostresNavideños", "cta": "Envío (etiquetar)", "kw": "repostería, molde desarmable, boquillas, bandeja para postres", "tags": "#LiderPriceMgta #Reposteria #Porlamar #IslaDeMargarita #PostresNavideños", "alt": "El vendedor de Lider Price sostiene una bandeja de postres de tres pisos junto a mangas pasteleras, boquillas y un molde desarmable.", "guion": {"idea": "El vendedor muestra cómo llevar el postre de Navidad como de pastelería.", "total": "30", "sonido": "Voz del vendedor y música navideña suave", "tomas": [{"n": 1, "ini": "0", "fin": "2", "d": 2.0, "tipo": "Gancho", "que": "El vendedor sostiene la bandeja de 3 pisos.", "quien": "Vendedor", "dice": "Si en tu familia tú llevas el postre a la cena de Navidad, esto es para ti.", "pantalla": "¿Tú llevas el postre?"}, {"n": 2, "ini": "2", "fin": "10", "d": 8.0, "tipo": "Escena", "que": "Abre el molde desarmable y la torta sale entera.", "quien": "Vendedor", "dice": "Con el molde desarmable la torta sale entera.", "pantalla": "Sale entera"}, {"n": 3, "ini": "10", "fin": "18", "d": 8.0, "tipo": "Escena", "que": "Macro de la manga con boquilla decorando la torta.", "quien": "Vendedor", "dice": "Mangas y 23 boquillas para decorar como de pastelería.", "pantalla": "Decora"}, {"n": 4, "ini": "18", "fin": "24", "d": 6.0, "tipo": "Escena", "que": "Monta los dulces en la bandeja de 3 pisos.", "quien": "Vendedor", "dice": "Y para lucir los dulces, la bandeja de tres pisos.", "pantalla": "Luce"}, {"n": 5, "ini": "24", "fin": "30", "d": 6.0, "tipo": "Cierre", "que": "Muestra el cuchillo dorado y mira a cámara.", "quien": "Vendedor", "dice": "Todo en la calle Velásquez. Te esperamos.", "pantalla": "Calle Velásquez · Porlamar"}], "reglas": ["Si nadie del equipo decora, lo hace una repostera invitada con permiso de imagen."], "comunes": ["El vendedor es la cara de la marca: misma franela de Lider Price en todos los reels. Firma su permiso de imagen antes de grabar.", "Fondo limpio: el set o un pasillo ordenado de una sola categoría, nunca la pared de herramientas saturada.", "Quitar o girar las etiquetas de precio. El precio va solo en la descripción.", "Micrófono de solapa o teléfono cerca; apagar la música de la tienda en las tomas con voz.", "Grabar por partes, en vertical, 4K a 30 fps.", "Subtítulos en todo lo que se dice, con la palabra clave en pastilla roja."]}}, {"n": "15", "fecha": "2026-12-19", "dia": "Sábado", "hora": "9:00 a.m.", "formato": "Carrusel 4:5 (5 láminas)", "sys": "carr", "pilar": "Diciembre en Lider", "tema": "Playa de diciembre, bebida fría", "corto": "Playa", "principal": "Vaso térmico con tapa transparente 900 ml + 5 más", "productos": [{"refs": ["HS2445"], "name": "Vaso térmico con tapa transparente 900 ml", "stock": 31}, {"refs": ["HS25100"], "name": "Vaso térmico con tapa 600 ml", "stock": 11}, {"refs": ["VC-09"], "name": "Termo isotérmico 600 ml", "stock": 11}, {"refs": ["OF-103"], "name": "Termo 500 ml", "stock": 26}, {"refs": ["HS2448"], "name": "Taza térmica 500 ml", "stock": 18}, {"refs": ["LP-000966"], "name": "Termos de figuritas y dibujos", "stock": 22}], "plantilla": "T1-T2-T2-T3-T4", "ficha": "Vaso térmico de 900 ml y de 600 ml con tapa transparente. Termo isotérmico de 600 ml. Termo de 500 ml. Taza térmica de 500 ml en colores surtidos. Termos con dibujos para niños. [Verificar horas de frío y de calor, y si son de acero inoxidable.]", "laminas": [{"t": "T1", "tit": "Que el hielo dure hasta la última ola", "apoyo": "Etiqueta roja: Vasos y termos térmicos", "vis": "Escena IA en una playa de Margarita al mediodía: el vaso térmico real de 900 ml sobre una toalla clara con gotas de condensación. Titular sobre el cielo."}, {"t": "T2", "tit": "Vasos térmicos", "apoyo": ["900 ml con tapa transparente", "600 ml con tapa", "Horas de frío y calor [verificar]", "Refs. HS2445 · HS25100"], "vis": "Productos alineados por altura."}, {"t": "T2", "tit": "Termos", "apoyo": ["Isotérmico de 600 ml", "Termo de 500 ml", "Termos con dibujos para niños", "Refs. VC-09 · OF-103 · LP-000966"], "vis": "Misma composición que la lámina 2."}, {"t": "T3", "tit": "Playa, carro o trabajo", "apoyo": "", "vis": "Macro del hielo dentro del vaso."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["Calle Velásquez, Porlamar", "Lun-Sáb 8am-5pm · Dom hasta 3pm", "Aceptamos divisas, pago móvil, punto y Cashea"], "vis": "Fondo #FEFDFD. Isotipo rojo grande arriba, tagline en Inter ExtraBold negro al centro y bloque de tienda en gris #616161 abajo."}], "piece": [["Lámina 1", "Que el hielo dure hasta la última ola"], ["Lámina 2", "Vasos térmicos"], ["Lámina 3", "Termos"], ["Lámina 4", "Playa, carro o trabajo"], ["Lámina 5", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: escena IA en la orilla de una playa de Margarita al mediodía, vaso térmico real sobre una toalla clara con gotas de condensación; titular arriba sobre el cielo. L2 y L3 T2: productos alineados por altura. L4 T3: macro de hielo dentro del vaso. L5 T4.", "prompt": "SUBJECT: The exact product from the reference image (Vaso térmico con tapa transparente 900 ml), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: Bright Margarita Island beach at noon, turquoise water, the 900 ml tumbler from the reference standing on a light beach towel with condensation drops, sunglasses, no faces, high-key light.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "Diciembre en la isla también es playa. 🏖️ Que la bebida siga fría hasta la última ola.\n\nVasos y termos térmicos para la playa, el carro o el trabajo. Mantienen la temperatura por horas, así que el hielo dura y el café no se enfría.\n\n✔ Vaso térmico con tapa de 900 ml\n✔ Vaso térmico de 600 ml\n✔ Termos isotérmicos de 500 y 600 ml\n✔ Termos con dibujos para los niños\n✔ [verificar: horas de frío y calor]\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nMándaselo a quien ya está planeando el día de playa.\n\nVasos y termos térmicos en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Playa #Porlamar #IslaDeMargarita #VasoTermico", "cta": "Envío", "kw": "vaso térmico, termo, playa en Margarita", "tags": "#LiderPriceMgta #Playa #Porlamar #IslaDeMargarita #VasoTermico", "alt": "Vaso térmico de 900 ml con gotas de condensación sobre una toalla en una playa de Isla de Margarita. Disponible en Lider Price, Porlamar.", "guion": null}, {"n": "16", "fecha": "2026-12-22", "dia": "Martes", "hora": "7:00 p.m.", "formato": "Reel 9:16", "sys": "prod", "pilar": "Diciembre en Lider", "tema": "Faltan 2 días para el Niño Jesús", "corto": "Faltan 2 días", "principal": "Monopatín + 5 más", "productos": [{"refs": ["3750484-12P", "3750481-8P", "2190026-6P"], "name": "Monopatín", "stock": 53}, {"refs": ["2190013P"], "name": "Carrito para niños", "stock": 17}, {"refs": ["829166"], "name": "Estacionamiento Parking Garage", "stock": 11}, {"refs": ["252120"], "name": "Juego de tractor WJ58", "stock": 13}, {"refs": ["HS3101"], "name": "Balón de fútbol", "stock": 10}, {"refs": [], "name": "Bicicletas rin 12, 16 y 20", "stock": null}], "plantilla": "R2", "ficha": "Monopatines para niños [verificar edad recomendada]. Carrito para niños. Estacionamiento Parking Garage. Juego de tractor WJ58. Balón de fútbol de PU, número [verificar]. Bicicletas rin 12, 16 y 20.", "laminas": [], "piece": [["Portada", "Faltan 2 días"], ["Cierre", "Todavía estás a tiempo"]], "diseno": "Portada R2: árbol de Navidad con regalos envueltos en kraft y lazos rojos, la bici rin 16 al lado; titular negro grande con el \"2\" en rojo. Stop motion: cada juguete sale de una caja de regalo.", "prompt": "SUBJECT: The exact product from the reference image (Monopatín), unchanged: same shape, colors, logos, buttons and proportions. Do not redesign or add parts.\nSCENE: living room on Christmas Eve, small decorated tree, gifts wrapped in kraft paper with red ribbons, the kids bike from the reference beside the tree, warm string-light bokeh, no faces.\nCOMPOSITION: vertical 4:5, product fills 40-55% of the frame, clean negative space in the top-left third for a headline.\nLIGHTING: soft natural daylight from the left, warm 4500K, realistic contact shadows.\nSTYLE: premium home-retail catalog photography, photorealistic, 50mm lens, shallow depth of field.\nNEGATIVE: no text, no added logos, no extra products, no people faces, no product distortion, no red backgrounds, no clutter, no snow.", "desc": "Faltan 2 días para el Niño Jesús y todavía estás a tiempo. 🎄 Aquí lo consigues todo en un solo sitio.\n\nMonopatines, carritos, estacionamientos de juguete, tractores, balones y bicicletas. Para que el 24 en la mañana haya caras felices en tu casa.\n\n✔ Monopatines para niños\n✔ Carrito para niños y juego de tractor\n✔ Estacionamiento Parking Garage\n✔ Balones de fútbol\n✔ Bicicletas rin 12, 16 y 20\n💲 [PRECIO]\nLlévatelo con Cashea.\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nMándaselo al Niño Jesús de tu casa. 😉\n\nJuguetes y bicicletas para el Niño Jesús en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #NiñoJesus #Porlamar #IslaDeMargarita #Juguetes", "cta": "Envío", "kw": "juguetes, Niño Jesús, bicicletas, monopatín", "tags": "#LiderPriceMgta #NiñoJesus #Porlamar #IslaDeMargarita #Juguetes", "alt": "Monopatín, carrito, estacionamiento de juguete, tractor, balón y una bicicleta con lazo rojo junto a un árbol de Navidad. Juguetes en Lider Price, Porlamar.", "guion": {"idea": "Cuenta regresiva al 24: los juguetes salen de los regalos en stop motion.", "total": "14", "sonido": "Música navideña alegre y sonido de papel de regalo", "tomas": [{"n": 1, "ini": "0", "fin": "1", "d": 1.0, "tipo": "Gancho", "que": "Árbol de Navidad con regalos envueltos en kraft y lazos rojos.", "quien": null, "dice": "", "pantalla": "Faltan 2 días"}, {"n": 2, "ini": "1", "fin": "3", "d": 2.0, "tipo": "Escena", "que": "Stop motion: se abre una caja y aparece el monopatín.", "quien": "Sonido", "dice": "Sonido de papel", "pantalla": "Monopatines"}, {"n": 3, "ini": "3", "fin": "5", "d": 2.0, "tipo": "Escena", "que": "Otra caja: el carrito para niños.", "quien": null, "dice": "", "pantalla": "Carritos"}, {"n": 4, "ini": "5", "fin": "7", "d": 2.0, "tipo": "Escena", "que": "Otra caja: el estacionamiento de juguete.", "quien": null, "dice": "", "pantalla": "Estacionamiento"}, {"n": 5, "ini": "7", "fin": "9", "d": 2.0, "tipo": "Escena", "que": "Otra caja: el tractor y el balón.", "quien": null, "dice": "", "pantalla": "Tractor y balón"}, {"n": 6, "ini": "9", "fin": "11", "d": 2.0, "tipo": "Escena", "que": "La bici con lazo rueda dentro del plano.", "quien": "Sonido", "dice": "Timbre de bicicleta", "pantalla": "Bicicletas"}, {"n": 7, "ini": "11", "fin": "14", "d": 3.0, "tipo": "Cierre", "que": "Cierre con logo, dirección y Cashea.", "quien": null, "dice": "", "pantalla": "Todavía estás a tiempo"}], "reglas": ["Cámara fija en trípode solo para el stop motion.", "Sin niños en cámara."], "comunes": ["Grabar en el set fijo o en la escena real de uso, con luz lateral.", "Productos limpios, sin etiquetas de precio ni plástico brillante.", "Sonido real de cada producto (clic, motor, rodillo) y música en tendencia baja.", "Vertical, 4K a 30 fps; un plano por golpe de música.", "Texto en pantalla en Inter Bold, una palabra o frase corta por plano."]}}, {"n": "17", "fecha": "2026-12-23", "dia": "Miércoles", "hora": "9:00 a.m.", "formato": "Carrusel 4:5 (3 láminas)", "sys": "carr", "pilar": "Tienda y servicio", "tema": "Todavía estás a tiempo", "corto": "Último llamado", "principal": "Recordatorio de tienda con 4 regalos fuertes: bicicleta rin 16, waflera Sokany, pinza amperimétrica y bandeja de postres de 3 pisos", "productos": [{"refs": [], "name": "Recordatorio de tienda con 4 regalos fuertes: bicicleta rin 16, waflera Sokany, pinza amperimétrica y bandeja de postres de 3 pisos", "stock": null}], "plantilla": "T1-T2-T4", "ficha": "Sin ficha. [Confirmar horario del 24 y del 31 de diciembre.]", "laminas": [{"t": "T1", "tit": "Todavía estás a tiempo", "apoyo": "Etiqueta roja: Abiertos el 23 y el 24", "vis": "Foto real de la fachada de Lider Price en la calle Velásquez al amanecer, con luz dorada. Titular arriba."}, {"t": "T2", "tit": "Cuatro regalos que no fallan", "apoyo": ["Bicicleta rin 16", "Waflera Sokany", "Pinza amperimétrica", "Bandeja de postres de 3 pisos"], "vis": "Grilla 2 × 2 sobre fondo #FEFDFD, cada producto con una línea de texto."}, {"t": "T4", "tit": "Todo para tu casa, en un solo sitio", "apoyo": ["23 dic: 8am a 5pm", "24 dic: [confirmar horario]", "Calle Velásquez, Porlamar", "Aceptamos Cashea"], "vis": "Mini mapa en líneas grises con un pin rojo, el horario grande y el bloque de pago."}], "piece": [["Lámina 1", "Todavía estás a tiempo"], ["Lámina 2", "Cuatro regalos que no fallan"], ["Lámina 3", "Todo para tu casa, en un solo sitio"]], "diseno": "L1 T1: fachada de Lider Price en la calle Velásquez fotografiada de verdad al amanecer, con luz dorada; titular arriba. L2 T2: grilla 2 × 2 sobre fondo #FEFDFD, cada producto con una línea. L3 T4: mini mapa ilustrado en líneas grises con un pin rojo, el horario grande y \"Aceptamos Cashea\".", "prompt": "", "desc": "Todavía estás a tiempo. 🎁 Hoy y mañana te esperamos en la calle Velásquez para que no te falte nada.\n\nBicicletas, electrodomésticos pequeños, herramientas para regalar y todo lo de la cocina para la cena del 24.\n\n✔ 23 de diciembre: 8am a 5pm\n✔ 24 de diciembre: [confirmar horario]\n✔ Paga con divisas, pago móvil, punto o Cashea\n\n📍 Calle Velásquez, Porlamar\n\nMándaselo a quien siempre compra los regalos a última hora.\n\nTienda de hogar, electrodomésticos y herramientas abierta en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #Navidad #Porlamar #IslaDeMargarita #RegalosDeNavidad", "cta": "Visita / envío", "kw": "tienda abierta en Porlamar, regalos de última hora", "tags": "#LiderPriceMgta #Navidad #Porlamar #IslaDeMargarita #RegalosDeNavidad", "alt": "Fachada de Lider Price en la calle Velásquez de Porlamar al amanecer, con el horario del 23 y 24 de diciembre y el pago con Cashea.", "guion": null}, {"n": "18", "fecha": "2026-12-30", "dia": "Miércoles", "hora": "7:00 p.m.", "formato": "Reel 9:16", "sys": "vend", "pilar": "Resuelve en casa", "tema": "Arranca el 2027 con la casa en orden", "corto": "Casa en orden", "principal": "Gabinete de almacenamiento + 3 más", "productos": [{"refs": ["MP28-51"], "name": "Gabinete de almacenamiento", "stock": 22}, {"refs": ["BG-643"], "name": "Cook & Keep rectangular storage box set", "stock": 23}, {"refs": ["0755"], "name": "Organizador de cubiertos", "stock": 15}, {"refs": ["0849"], "name": "Organizador plástico", "stock": 10}], "plantilla": "R1", "ficha": "Gabinete de almacenamiento [verificar medidas y número de gavetas]. Set de envases rectangulares Cook & Keep [verificar piezas y si van al microondas]. Organizador de cubiertos marrón. Organizador plástico [verificar medidas].", "laminas": [], "piece": [["Portada", "El propósito más fácil del 2027"], ["Cierre", "Gracias por este 2026"]], "diseno": "Portada R1: vendedor junto al gabinete abierto y ordenado; set limpio; titular blanco; pastilla roja. El último plano es el agradecimiento a cámara.", "prompt": "", "desc": "El propósito de Año Nuevo más fácil de cumplir: la casa en orden. 📦 Empieza el 2027 sabiendo dónde está cada cosa.\n\nUn gabinete para el cuarto o el lavadero, envases para guardar lo que sobró de la cena y organizadores para la gaveta de los cubiertos. Orden que se nota desde el primer día del año.\n\n✔ Gabinete de almacenamiento\n✔ Set de envases rectangulares Cook & Keep\n✔ Organizador de cubiertos\n✔ Organizadores plásticos\n💲 [PRECIO]\n\n📍 Calle Velásquez, Porlamar\n🕗 Lun-Sáb 8am-5pm · Dom hasta 3pm\n💳 Divisas, pago móvil, punto y Cashea\n\nGracias por elegirnos este 2026. Nos vemos en la calle Velásquez.\n\nOrganizadores y almacenamiento para el hogar en Porlamar, Isla de Margarita.\n\n#LiderPriceMgta #AñoNuevo #Porlamar #IslaDeMargarita #Organizacion", "cta": "Visita / guardado", "kw": "organizadores, gabinete, envases, casa en orden", "tags": "#LiderPriceMgta #AñoNuevo #Porlamar #IslaDeMargarita #Organizacion", "alt": "El vendedor de Lider Price junto a un gabinete de almacenamiento ordenado, envases Cook & Keep y un organizador de cubiertos.", "guion": {"idea": "Cierre del año: la casa en orden y el agradecimiento del equipo.", "total": "30", "sonido": "Voz del vendedor y música tranquila", "tomas": [{"n": 1, "ini": "0", "fin": "2", "d": 2.0, "tipo": "Gancho", "que": "El vendedor junto al gabinete cerrado.", "quien": "Vendedor", "dice": "El propósito de Año Nuevo más fácil de cumplir: la casa en orden.", "pantalla": "El propósito más fácil del 2027"}, {"n": 2, "ini": "2", "fin": "12", "d": 10.0, "tipo": "Escena", "que": "Abre el gabinete y lo organiza en cámara rápida.", "quien": "Sonido", "dice": "Música en cámara rápida", "pantalla": "Gabinete de almacenamiento"}, {"n": 3, "ini": "12", "fin": "20", "d": 8.0, "tipo": "Escena", "que": "Guarda las sobras de la cena en los envases Cook & Keep.", "quien": "Vendedor", "dice": "Lo que sobró de la cena, guardado y ordenado.", "pantalla": "Envases Cook & Keep"}, {"n": 4, "ini": "20", "fin": "25", "d": 5.0, "tipo": "Escena", "que": "La gaveta de cubiertos con el organizador.", "quien": "Vendedor", "dice": "Y la gaveta, por fin en orden.", "pantalla": "Organizador de cubiertos"}, {"n": 5, "ini": "25", "fin": "30", "d": 5.0, "tipo": "Cierre", "que": "El vendedor a cámara.", "quien": "Vendedor", "dice": "Gracias por elegirnos este 2026. Nos vemos en la calle Velásquez.", "pantalla": "Gracias por este 2026"}], "reglas": ["El último plano es el equipo completo, si es posible."], "comunes": ["El vendedor es la cara de la marca: misma franela de Lider Price en todos los reels. Firma su permiso de imagen antes de grabar.", "Fondo limpio: el set o un pasillo ordenado de una sola categoría, nunca la pared de herramientas saturada.", "Quitar o girar las etiquetas de precio. El precio va solo en la descripción.", "Micrófono de solapa o teléfono cerca; apagar la música de la tienda en las tomas con voz.", "Grabar por partes, en vertical, 4K a 30 fps.", "Subtítulos en todo lo que se dice, con la palabra clave en pastilla roja."]}}], "hist": {"week": [["Lunes", "Llegó hoy", "Se abre una caja de mercancía nueva en el depósito y se muestra lo que llegó.", "Encuesta: «¿Lo quieres ver en video?»"], ["Martes", "¿Esto o esto?", "Dos productos de la misma categoría en las manos del vendedor.", "Encuesta con los dos nombres"], ["Miércoles", "Pregúntale al vendedor", "Se abre la caja de preguntas el martes y el miércoles se responde en video selfie, una pregunta por historia.", "Pregunta: «¿Qué necesitas resolver en tu casa?»"], ["Jueves", "Detrás del mostrador", "El equipo trabajando: acomodando anaqueles, armando una bici, probando un taladro.", "Ninguno o emoji deslizable"], ["Viernes", "Cliente contento", "Un cliente que se lleva algo y cuenta para qué lo compró, con su permiso. Si no hay, se reposta una mención.", "Ninguno · mención al cliente"], ["Sábado", "Hoy en la tienda", "El ambiente del día: pasillos con gente, la caja, el vendedor atendiendo. Se recuerda el horario.", "Ubicación + horario"], ["Domingo", "Abiertos hasta las 3", "Una sola historia en la mañana, con la puerta abierta y el vendedor saludando.", "Cuenta regresiva o ninguno"]], "plan": [["15 – 21 nov", "Luz, calor y casa", [["Dom 15", "Se comparte el reel de los apagones con la encuesta «¿Cuántas veces se te fue la luz esta semana?»: 0 · 1 o 2 · Más de 3."], ["Mié 18", "«Pregúntale al vendedor» sobre bombillos: cuál sirve para la sala, para el negocio o para la mesa de noche."], ["Sáb 21", "El vendedor en el pasillo de pintura: «¿Este diciembre pintas la casa?». Encuesta: Sí · Todavía no."]]], ["22 – 28 nov", "Black Friday y Cashea", [["Lun 24", "Arranca el anuncio de bicis. Se graba en caja el paso a paso real de pagar con Cashea, en 3 historias, y se guarda en el destacado Cashea."], ["Jue 26", "Cuenta regresiva «Black Friday en Lider Price» para que la gente active el recordatorio."], ["Vie 27", "Black Friday en vivo: 5 o 6 historias a lo largo del día con el movimiento en la tienda. Si hay promoción, se cuenta tal cual. [confirmar]"]]], ["29 nov – 5 dic", "Arranca diciembre", [["Lun 1", "El equipo montando las luces de Navidad en la tienda, grabado como time-lapse con el teléfono."], ["Jue 3", "Pregunta abierta: «¿Quién hace las hallacas en tu casa?». Se comparten las respuestas más simpáticas."], ["Sáb 5", "Quiz: «¿Qué rin le toca a un niño de 6 años?» (12 · 16 · 20). Respuesta al día siguiente con el vendedor."]]], ["6 – 12 dic", "Regalos y visitas", [["Lun 8", "«¿Esto o esto?» de regalo para mamá: la waflera o la batidora Sokany."], ["Mié 10", "El vendedor armando una bicicleta en el mostrador, en cámara rápida."], ["Sáb 12", "Clientes llevándose bicicletas, sin mostrar caras de niños. Recordatorio de la palabra clave «Vengo por la bici»."]]], ["13 – 19 dic", "Cuenta regresiva", [["Lun 14", "Se activa el sticker de cuenta regresiva «Llega el Niño Jesús» y se repite cada día hasta el 24."], ["Mié 16", "Pregunta: «¿Qué le pediste al Niño Jesús cuando eras chamo?». El equipo responde primero con sus propias historias."], ["Sáb 19", "El equipo con los termos y vasos térmicos: «¿Quién se va a la playa este fin de semana?»."]]], ["20 – 26 dic", "Último llamado", [["Mar 22 – Mié 23", "El vendedor en la puerta: «Faltan 2 días» y «Mañana es 24», con el horario."], ["Jue 24", "Foto real del equipo en la tienda: «Feliz Nochebuena de parte de todos». Horario del día [confirmar]."], ["Sáb 26", "«¿Qué te trajo el Niño Jesús?». Se invita a los padres a etiquetar; solo se repostea con su permiso."]]], ["27 – 31 dic", "Cierre de año", [["Lun 29", "Detrás del mostrador: el equipo ordenando la tienda para el 2027."], ["Mié 30", "Se comparte el reel de la casa en orden con la encuesta «¿Tu propósito es ordenar la casa?»."], ["Jue 31", "Mensaje de fin de año del equipo grabado en un solo plano, con el horario del día [confirmar]."]]]], "ideas": [["Equipo y tienda", "La santamaría subiendo", "Plano fijo desde adentro mientras se abre la tienda a las 8:00.", "«¡Buenos días, Porlamar! Ya abrimos.»", "Ubicación"], ["Equipo y tienda", "El café del equipo", "El equipo tomando café antes de abrir, en un plano corto.", "«Así arrancamos el día.»", "Ninguno"], ["Equipo y tienda", "Conoce al equipo", "Una persona del equipo cuenta en 10 segundos qué hace y qué producto recomienda.", "«Soy [nombre] y si vienes por…, pregúntame a mí.»", "Ninguno"], ["Equipo y tienda", "Recorrido de 15 segundos", "El teléfono caminando por un pasillo de una sola categoría.", "«Este es el pasillo de cocina.»", "Encuesta: «¿Qué pasillo quieres ver mañana?»"], ["Producto en uso", "Prueba en el mostrador", "El vendedor prueba el taladro, la batidora o el bombillo recargable delante de la cámara.", "«Mira cómo funciona.»", "Emoji deslizable"], ["Producto en uso", "Llegó hoy", "Abrir una caja recién llegada y sacar el producto.", "«Esto acaba de llegar.»", "Encuesta: «¿Lo quieres ver en video?»"], ["Producto en uso", "El producto del día", "Un producto en la mano, con el precio dicho en voz alta si la tienda lo autoriza.", "«Hoy te muestro…»", "Pregunta: «¿Para qué lo usarías?»"], ["Producto en uso", "Comparación rápida", "Dos tamaños o dos modelos lado a lado.", "«¿Cuál te sirve? Depende de…»", "Encuesta"], ["Ayuda rápida", "Truco de 15 segundos", "Un consejo práctico: cómo elegir la broca, cómo saber la talla de la bici.", "«Un truco antes de comprar…»", "Ninguno"], ["Ayuda rápida", "Respuesta a un DM", "Captura de una pregunta real (sin el nombre) y el vendedor la responde en video.", "«Nos preguntaron esto…»", "Pregunta para la siguiente"], ["Ayuda rápida", "Qué llevar para…", "El vendedor arma en el mostrador lo necesario para un trabajo: pintar, colgar una repisa, cambiar un bombillo.", "«Si vas a pintar, esto es lo que necesitas.»", "Ninguno"], ["Interacción", "¿Esto o esto?", "Dos productos, uno en cada mano.", "—", "Encuesta con los dos nombres"], ["Interacción", "Quiz del vendedor", "Una pregunta con 3 opciones sobre un producto.", "—", "Quiz"], ["Interacción", "Caja de preguntas", "Fondo de foto real de la tienda.", "«¿Qué necesitas resolver en tu casa?»", "Pregunta"], ["Interacción", "Escala de calor", "El vendedor con un ventilador en la cara en pleno mediodía.", "«¿Qué tanto calor hace hoy?»", "Emoji deslizable 🥵"], ["Clientes", "Cliente contento", "Un cliente cuenta en 10 segundos para qué compró algo, con su permiso.", "«¿Para qué es?»", "Mención si tiene cuenta"], ["Clientes", "Repost de menciones", "Se repostea la historia de un cliente que etiquetó a la tienda.", "«Gracias por la confianza.»", "Ninguno"], ["Clientes", "Fila en caja", "Plano general de la tienda con movimiento, sin caras en primer plano.", "«Así está la tienda hoy.»", "Ubicación"], ["Temporada", "Cuenta regresiva", "Foto real de la vitrina o del árbol de la tienda.", "«Faltan X días.»", "Cuenta regresiva"], ["Temporada", "Diciembre en la tienda", "Las luces de la tienda encendidas al cerrar.", "«Así se ve Lider Price en diciembre.»", "Ninguno"], ["Temporada", "Nostalgia navideña", "El equipo cuenta su mejor recuerdo de diciembre.", "«¿Y el tuyo?»", "Pregunta"], ["Temporada", "Cashea paso a paso", "En caja, con el teléfono del cliente o del vendedor, sin mostrar datos personales.", "«Así de fácil se paga con Cashea.»", "Ninguno · va al destacado"]]}, "ad": {"texto": "Este diciembre, que el Niño Jesús llegue en bicicleta. 🚲 Tenemos rin 12, 16 y 20, una para cada edad, y te asesoramos para que aciertes con la talla. Desde [PRECIO]. Llévatela con Cashea o paga con divisas, pago móvil o punto. 📍 Calle Velásquez, Porlamar.", "titulo": "Bicicletas para niños en Porlamar", "desc": "Rin 12, 16 y 20 · Paga con Cashea", "boton": "Obtener indicaciones [verificar] · si no, Más información", "prompt": "Warm sunset terrace of a white Caribbean house in Margarita Island, light ceramic floor, string-light bokeh, a few potted palms; the exact kids bike from the reference, unchanged, three-quarter side view on the right half of a 4:5 frame, a red ribbon (#E01F36) tied on the handlebar, clean negative space top-left; photorealistic catalog photography, soft warm light, realistic shadows; no text, no people, no snow."}, "todo": [["bf", "¿Hay promoción real de Black Friday el 27 nov?", "Si no, el post 6 queda como «Black Friday con Cashea», sin descuento."], ["horario", "Horario del 24 y del 31 de diciembre", "Afecta el post 17, la cuenta regresiva y las historias de esos días."], ["bombillo", "Stock del bombillo con ventilador", "Quedan 10 unidades. ¿Se repone o el post 2 pasa a ventiladores?"], ["fichas", "Confirmar en tienda los datos marcados en amarillo", "Empezar por las publicaciones 1 a 6; se revisan en la caja de cada producto."], ["vendedor", "Permiso de imagen del vendedor", "Firmado antes de grabar el primer reel (15 nov)."], ["ads", "Cuenta de Meta Ads lista antes del 24 nov", "Página de Facebook con la dirección cargada y método de pago."], ["precio", "Precio «desde» del anuncio", "El monto que va en el texto principal de Meta Ads."], ["incentivo", "Incentivo «Vengo por la bici»", "¿Se aprueba el parche para llanta (ref. AZ2217) para quien diga la frase?"], ["etiqueta", "Etiqueta roja de portadas y nombre del pilar", "¿Sigue «LO RESUELVE» o va el nombre del producto? ¿El pilar pasa a «Casa al día»?"], ["camara", "Quién del equipo sale en las historias", "Las series «Conoce al equipo» y «Detrás del mostrador» dependen de eso."], ["fachada", "Foto real de la fachada para el post 17", "Al amanecer, con luz dorada."], ["whatsapp", "Activar WhatsApp Business", "Si se activa, todos los CTA de DM pasan a WhatsApp."], ["google", "Perfil de Google Business (Google Maps)", "Fotos, horario, categorías y reseñas."]]};
+const SYS = {
+  carr:{name:"Carrusel con ficha", short:"Carrusel", what:"De 3 a 7 láminas: portada con escena IA y gancho (T1), ficha técnica (T2), uso (T3) y cierre con tagline y tienda (T4).", goal:"Guardados y decisión de compra"},
+  vend:{name:"Reel con vendedor", short:"Vendedor", what:"La cara de la marca resuelve un problema a cámara en 15 a 30 s. Portada R1.", goal:"Confianza, envíos y alcance a no seguidores"},
+  prod:{name:"Reel de producto", short:"Producto", what:"Solo producto, sin voz: el problema en imagen, el producto en uso y sonido real. Portada R2.", goal:"Retención y deseo de producto"}
+};
+const order=["carr","vend","prod"];
+const PILS=["Resuelve en casa","Taller Lider","Diciembre en Lider","Tienda y servicio"];
+const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hl = s => esc(s).replace(/\[(verificar|confirmar)[^\]]*\]|\[PRECIOS?\]/gi, m => `<mark class="v">${m}</mark>`);
+const kw = s => hl(s).replace(/\*(.+?)\*/g,'<em class="kw">$1</em>');
+const MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+const fmtDate = iso => { const d=new Date(iso+"T12:00:00"); return d.getDate()+" "+MESES[d.getMonth()].slice(0,3)+"."; };
+const posts = DATA.posts.map(p=>({...p, month:+p.fecha.slice(5,7)}));
+
+/* Mezcla */
+const cnt = k => posts.filter(p=>p.sys===k).length;
+document.getElementById("mix").innerHTML = posts.map(p=>`<i data-sys="${p.sys}" title="${p.n} · ${esc(SYS[p.sys].name)}"></i>`).join("");
+document.getElementById("mixlegend").innerHTML = order.map(k=>`<span data-sys="${k}" class="pill">${SYS[k].name}</span><span><b>${cnt(k)}</b> en el periodo</span>`).join("");
+document.getElementById("systems").innerHTML = order.map(k=>`<div class="sys" data-sys="${k}">
+  <span class="pill">${SYS[k].name}</span>
+  <p class="count"><b>${cnt(k)}</b>publicaciones</p>
+  <p>${SYS[k].what}</p>
+  <p><strong>Busca:</strong> ${SYS[k].goal}</p></div>`).join("") +
+  `<div class="sys" style="--sys:var(--muted)"><span class="pill">Pilares</span>${PILS.map(pl=>`<p><strong>${posts.filter(p=>p.pilar===pl).length}</strong> · ${esc(pl)}</p>`).join("")}<p><strong>Busca:</strong> que la variedad se vea: hogar, cocina, electro, herramientas y bicis.</p></div>`;
+
+/* Calendario */
+const notes = {"2026-11-27":"Black Friday","2026-11-24":"Arranca la pauta","2026-12-23":"Cierra la pauta","2026-12-24":"Nochebuena","2026-12-31":"Fin de año"};
+function monthGrid(y,m){
+  const first=new Date(y,m-1,1), days=new Date(y,m,0).getDate();
+  const lead=(first.getDay()+6)%7;
+  let h=["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"].map(d=>`<div class="dow">${d}</div>`).join("");
+  for(let i=0;i<lead;i++) h+=`<div class="day out" aria-hidden="true"></div>`;
+  for(let d=1; d<=days; d++){
+    const iso=`${y}-${String(m).padStart(2,"0")}-${String(d).padStart(2,"0")}`;
+    const ps=posts.filter(p=>p.fecha===iso);
+    const camp = iso>="2026-11-24" && iso<="2026-12-23";
+    const off = iso<"2026-11-15";
+    h+=`<div class="day${ps.length?" pubday":""}${camp?" camp":""}${off?" out":""}"><span class="d num">${d}</span>${notes[iso]?`<span class="note">${notes[iso]}</span>`:""}`+
+      ps.map(p=>`<button class="chip" data-sys="${p.sys}" data-go="${p.n}" aria-label="Publicación ${p.n}: ${esc(SYS[p.sys].name)}, ${esc(p.tema)}"><span class="n">${p.n} · ${SYS[p.sys].short}</span><span class="l">${esc(p.corto)}</span></button>`).join("")+`</div>`;
+  }
+  const count=posts.filter(p=>p.month===m).length;
+  return `<div class="month"><div class="month-head"><h3>${m===11?"Noviembre":"Diciembre"}</h3><span>${count} publicaciones · ${m===11?"La casa del día a día":"Diciembre venezolano"}</span></div><div class="cal">${h}</div></div>`;
+}
+document.getElementById("months").innerHTML = monthGrid(2026,11)+monthGrid(2026,12);
+document.getElementById("callegend").innerHTML = order.map(k=>`<span class="pill" data-sys="${k}">${SYS[k].name}</span>`).join("")+`<span class="camp-key"><i></i>Pauta Meta Ads activa</span>`;
+
+/* Fichas */
+let cid=0;
+function field(label, html, copyText){
+  const id = copyText!=null ? `c${++cid}` : "";
+  return `<div class="block"><div class="lab"><span>${label}</span>${copyText!=null?`<button class="copy" data-copy="${id}">Copiar</button>`:""}</div>${copyText!=null?`<div id="${id}" hidden>${esc(copyText)}</div>`:""}${html}</div>`;
+}
+function guionBlock(g, sys){
+  const bar=g.tomas.map(s=>'<i class="'+(s.tipo==="Cierre"?"end":(s.pantalla?"has-text":""))+'" style="flex:'+s.d+' 1 0" title="Toma '+s.n+' · '+esc(s.ini)+'–'+esc(s.fin)+' s · '+esc(s.tipo)+'">'+s.n+'</i>').join("");
+  const shots=g.tomas.map(s=>'<li class="g-shot">'+
+    '<span class="g-n">'+s.n+'</span>'+
+    '<span class="g-when"><b>'+esc(s.ini)+'–'+esc(s.fin)+' s</b><span>'+esc(s.tipo)+'</span></span>'+
+    '<div class="g-que">'+(s.dice?'<span class="g-dice'+(s.quien==="Sonido"?" sonido":"")+'"><small>'+(s.quien==="Sonido"?"Sonido":esc(s.quien)+" dice")+'</small>'+(s.quien==="Sonido"?esc(s.dice):'«'+esc(s.dice)+'»')+'</span>':'')+
+      '<span class="img">'+hl(s.que)+'</span></div>'+
+    (s.pantalla ? '<div class="g-pant on"><small>En pantalla</small><span>'+kw(s.pantalla)+'</span></div>'
+                : '<div class="g-pant off">Sin texto en pantalla</div>')+
+    '</li>').join("");
+  return '<div class="guion">'+
+    '<div class="g-head"><span class="lab"><span>Guion del reel · '+esc(SYS[sys].name)+'</span></span><p class="g-idea">'+esc(g.idea)+'</p>'+
+      '<div class="g-meta"><span>'+esc(g.total)+' s</span><span>'+g.tomas.length+' tomas</span><span>Vertical 9:16</span><span class="hot">'+esc(g.sonido)+'</span></div></div>'+
+    '<div class="g-bar" aria-hidden="true">'+bar+'</div>'+
+    '<div class="g-scale" aria-hidden="true"><span>0 s</span><span>'+esc(g.total)+' s</span></div>'+
+    '<ol class="g-list">'+shots+'</ol>'+
+    '<div class="g-notes">'+
+      '<div><span class="lab"><span>Reglas de este reel</span></span><ul>'+g.reglas.map(r=>'<li>'+hl(r)+'</li>').join("")+'</ul></div>'+
+      '<div><span class="lab"><span>Antes de grabar</span></span><ul>'+g.comunes.map(r=>'<li>'+esc(r)+'</li>').join("")+'</ul></div>'+
+    '</div></div>';
+}
+function lamsBlock(p){
+  return `<div class="lams">${p.laminas.map((l,i)=>`<div class="lam"><span class="lt"><b>Lámina ${i+1}</b><span>${esc(l.t)}</span></span><p class="lh">${hl(l.tit)}</p>${Array.isArray(l.apoyo)?`<ul>${l.apoyo.map(a=>`<li>${hl(a)}</li>`).join("")}</ul>`:(l.apoyo?`<p class="la">${hl(l.apoyo)}</p>`:"")}<p class="lv">${hl(l.vis)}</p></div>`).join("")}</div>`;
+}
+function pieceLines(lines){
+  return `<div class="piece">${lines.map(([a,b])=>`<div class="pl"><small>${esc(a)}</small><span>${kw(b)}</span></div>`).join("")}</div>`;
+}
+function prodList(p){
+  return `<ul class="prods">${p.productos.map(it=>`<li><span>${esc(it.name)}</span>${it.refs.length?`<span class="ref">${esc(it.refs.join(" / "))}</span>`:""}${it.stock!=null?(it.stock<=10?`<span class="low">Stock ${it.stock}</span>`:`<span class="ref">Stock ${it.stock}</span>`):""}</li>`).join("")}</ul>`;
+}
+function card(p){
+  const reel = !!p.guion;
+  return `<details class="post" id="p${p.n}" data-sys="${p.sys}" data-month="${p.month}" data-dep="${esc(p.pilar)}">
+  <summary>
+    <label class="done-box" title="Marcar como hecha"><input type="checkbox" class="done-cb" data-n="${p.n}" id="done-${p.n}" aria-label="Publicación ${p.n} hecha"></label>
+    <span class="pn">${p.n}</span>
+    <span class="pdate"><b>${fmtDate(p.fecha)}</b><span>${p.dia} · ${esc(p.hora)}</span><span class="state" data-state="${p.n}">Pendiente</span></span>
+    <span class="pmain"><span class="meta"><span class="pill">${SYS[p.sys].name}</span><span class="model">${esc(p.formato)} · ${esc(p.pilar)}</span></span>
+      <span class="head">${esc(p.tema)}</span>
+      <span class="model">${esc(p.principal)}</span></span>
+    <span class="chev" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span>
+  </summary>
+  <div class="pbody">
+    ${reel ? guionBlock(p.guion, p.sys) : `<div style="grid-column:1/-1">${field("Texto de cada lámina · "+p.laminas.length+" láminas", lamsBlock(p))}</div>`}
+    <div>
+      ${field("Texto en la pieza", pieceLines(p.piece))}
+      ${field("Productos para usar", prodList(p))}
+      ${field("Dirección de diseño", `<p class="txt">${hl(p.diseno)}</p>`)}
+      ${p.prompt ? field("Prompt de la escena · Nano Banana Pro", `<div class="code">${esc(p.prompt)}</div>`, p.prompt) : ""}
+      ${field("Ficha técnica", `<p class="txt">${hl(p.ficha)}</p>`)}
+      ${field("Ficha", `<dl class="facts"><dt>Formato</dt><dd>${esc(p.formato)}</dd><dt>Plantilla</dt><dd>${esc(p.plantilla)}</dd><dt>Pilar</dt><dd>${esc(p.pilar)}</dd><dt>CTA</dt><dd>${esc(p.cta)}</dd><dt>Hora</dt><dd>${esc(p.hora)}</dd></dl>`)}
+    </div>
+    <div>
+      ${field("Descripción", `<div class="caption">${hl(p.desc)}</div>`, p.desc)}
+      ${field("Hashtags", `<p class="hash">${esc(p.tags)}</p>`, p.tags)}
+      ${field("Palabras clave", `<div class="kws">${p.kw.split(",").map(k=>`<span>${esc(k.trim())}</span>`).join("")}</div>`)}
+      ${field("Texto alternativo", `<p class="txt" style="color:var(--muted)">${esc(p.alt)}</p>`, p.alt)}
+    </div>
+  </div></details>`;
+}
+document.getElementById("list").innerHTML = posts.map(card).join("");
+
+/* Filtros y estado */
+const state={est:"all",mes:"all",sis:"all",dep:"all"};
+let done={}; try{ done=JSON.parse(localStorage.getItem("lp-done")||"{}")||{}; }catch(_){ done={}; }
+function saveDone(){ try{ localStorage.setItem("lp-done",JSON.stringify(done)); }catch(_){} }
+function paintDone(){
+  posts.forEach(p=>{
+    const on=!!done[p.n];
+    const d=document.getElementById("p"+p.n); if(d) d.classList.toggle("is-done",on);
+    const cb=document.getElementById("done-"+p.n); if(cb) cb.checked=on;
+    const st=document.querySelector('[data-state="'+p.n+'"]'); if(st) st.textContent=on?"Hecha":"Pendiente";
+    document.querySelectorAll('.chip[data-go="'+p.n+'"]').forEach(c=>c.classList.toggle("is-done",on));
+  });
+  const total=posts.length, n=posts.filter(p=>done[p.n]).length;
+  const mo=m=>{const ps=posts.filter(p=>p.month===m); return [ps.filter(p=>done[p.n]).length, ps.length];};
+  const [n11,t11]=mo(11), [n12,t12]=mo(12);
+  const pct=x=>Math.round(x*100);
+  document.getElementById("progress").innerHTML=
+    '<div><p class="eyebrow">Avance</p><p class="big">'+n+'<small>de '+total+' publicaciones hechas</small></p><div class="bar"><i style="width:'+pct(n/total)+'%"></i></div></div>'+
+    '<div><p class="m">Noviembre · <b>'+n11+'/'+t11+'</b></p><div class="bar"><i style="width:'+pct(n11/t11)+'%"></i></div></div>'+
+    '<div><p class="m">Diciembre · <b>'+n12+'/'+t12+'</b></p><div class="bar"><i style="width:'+pct(n12/t12)+'%"></i></div></div>';
+}
+document.getElementById("list").addEventListener("change",e=>{
+  const cb=e.target.closest(".done-cb"); if(!cb) return;
+  if(cb.checked) done[cb.dataset.n]=true; else delete done[cb.dataset.n];
+  saveDone(); paintDone(); apply();
+});
+document.getElementById("list").addEventListener("click",e=>{
+  const box=e.target.closest(".done-box"); if(!box) return;
+  const cb=box.querySelector("input");
+  const want = e.target===cb ? cb.checked : !cb.checked;
+  e.preventDefault(); e.stopPropagation();
+  setTimeout(()=>{ cb.checked=want; cb.dispatchEvent(new Event("change",{bubbles:true})); },0);
+});
+function seg(id,key,opts,st,cb){
+  const S=st||state;
+  const el=document.getElementById(id);
+  el.innerHTML=opts.map(([v,l])=>`<button type="button" data-v="${esc(v)}" aria-pressed="${S[key]===v}">${esc(l)}</button>`).join("");
+  el.addEventListener("click",e=>{const b=e.target.closest("button"); if(!b) return; S[key]=b.dataset.v; el.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b)); (cb||apply)();});
+}
+seg("f-est","est",[["all","Todas"],["pend","Pendientes"],["done","Hechas"]]);
+seg("f-mes","mes",[["all","Todos"],["11","Noviembre"],["12","Diciembre"]]);
+seg("f-sis","sis",[["all","Todos"],...order.map(k=>[k,SYS[k].name])]);
+seg("f-dep","dep",[["all","Todos"],...PILS.map(p=>[p,p])]);
+function apply(){
+  let n=0;
+  document.querySelectorAll("details.post").forEach(d=>{
+    const isDone=!!done[d.id.slice(1)];
+    const ok=(state.est==="all"||(state.est==="done")===isDone)&&(state.mes==="all"||d.dataset.month===state.mes)&&(state.sis==="all"||d.dataset.sys===state.sis)&&(state.dep==="all"||d.dataset.dep===state.dep);
+    d.hidden=!ok; if(ok) n++;
+  });
+  document.getElementById("result").textContent = n===0 ? "Ninguna publicación coincide con estos filtros. Cambia uno para ver resultados." : `${n} de ${posts.length} publicaciones`;
+}
+paintDone();
+apply();
+function resetFilters(){ state.est=state.mes=state.sis=state.dep="all"; document.querySelectorAll("#publicaciones .seg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.v==="all")); apply(); }
+document.getElementById("months").addEventListener("click",e=>{
+  const b=e.target.closest("[data-go]"); if(!b) return;
+  resetFilters();
+  const d=document.getElementById("p"+b.dataset.go); d.open=true;
+  d.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth", block:"start"});
+  d.querySelector("summary").focus({preventScroll:true});
+});
+
+/* Copiar */
+document.addEventListener("click",async e=>{
+  const b=e.target.closest(".copy"); if(!b) return;
+  e.preventDefault();
+  const src=document.getElementById(b.dataset.copy); const text=src.textContent;
+  try{ await navigator.clipboard.writeText(text); b.textContent="Copiado"; }
+  catch(_){ src.hidden=false; const r=document.createRange(); r.selectNodeContents(src); const s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent="Seleccionado: copia con Ctrl+C"; }
+  setTimeout(()=>{b.textContent="Copiar"; src.hidden=true;},2200);
+});
+
+/* Texto del anuncio */
+const AD=DATA.ad;
+document.getElementById("adcopy").innerHTML = `<h3>Texto del anuncio</h3>
+  ${field("Texto principal", `<div class="caption">${hl(AD.texto)}</div>`, AD.texto)}
+  ${field("Título, descripción y botón", `<dl class="facts"><dt>Título</dt><dd>${esc(AD.titulo)}</dd><dt>Descripción</dt><dd>${esc(AD.desc)}</dd><dt>Botón</dt><dd>${esc(AD.boton)}</dd></dl>`)}
+  ${field("Prompt de la escena A1", `<div class="code">${esc(AD.prompt)}</div>`, AD.prompt)}`;
+
+/* Línea de tiempo de la pauta */
+let td="",ts="";
+for(let i=0;i<30;i++){ const d=new Date(2026,10,24+i); const iso=d.toISOString().slice(0,10); const dd=d.getDate(); const ph = i<13?"p1":i<27?"p2":"p3";
+  td+=`<i class="${ph}" title="${dd} ${MESES[d.getMonth()].slice(0,3)}" style="${ph==="p3"?"background:var(--c-pauta);outline:2px solid var(--fg);outline-offset:-2px":""}"></i>`;
+  ts+=`<span class="${[0,7,13,27,29].includes(i)?"k":""}">${dd}</span>`; }
+document.getElementById("tldays").innerHTML=td; document.getElementById("tlscale").innerHTML=ts;
+
+/* Historias */
+const H=DATA.hist;
+document.getElementById("hweek").innerHTML = H.week.map(d=>`<div class="hday"><span class="eyebrow">${esc(d[0])}</span><h3>${esc(d[1])}</h3><p>${esc(d[2])}</p><p class="st">${esc(d[3])}</p></div>`).join("");
+document.getElementById("hplan").innerHTML = H.plan.map(w=>`<div class="hwk"><div class="hh"><b>${esc(w[0])}</b><span>${esc(w[1])}</span></div><ul>${w[2].map(m=>`<li><b>${esc(m[0])}</b><span>${hl(m[1])}</span></li>`).join("")}</ul></div>`).join("");
+const hs={c:"Todas"};
+function renderIdeas(){ document.getElementById("hideas").innerHTML = H.ideas.filter(i=>hs.c==="Todas"||i[0]===hs.c).map(i=>`<div class="hidea"><span class="eyebrow">${esc(i[0])}</span><h3>${esc(i[1])}</h3><p><b>Se ve:</b> ${esc(i[2])}</p>${i[3]!=="—"?`<p class="dice">${esc(i[3])}</p>`:""}<p class="st">${esc(i[4])}</p></div>`).join(""); }
+seg("f-hist","c",["Todas","Equipo y tienda","Producto en uso","Ayuda rápida","Interacción","Clientes","Temporada"].map(x=>[x,x]),hs,renderIdeas);
+renderIdeas();
+
+/* Pendientes */
+const TODO_DEFAULT=DATA.todo;
+const TKEY="lp-todo-v1";
+const fresh=()=>TODO_DEFAULT.map(([id,t,s])=>({id,t,s,done:false,custom:false}));
+let todos=null;
+try{ todos=JSON.parse(localStorage.getItem(TKEY)||"null"); }catch(_){ todos=null; }
+if(!Array.isArray(todos)) todos=fresh();
+let seen=null; try{ seen=JSON.parse(localStorage.getItem(TKEY+"-seen")||"null"); }catch(_){ seen=null; }
+if(!Array.isArray(seen)) seen=TODO_DEFAULT.map(d=>d[0]);
+TODO_DEFAULT.forEach(([id,tt,s])=>{ if(!seen.includes(id) && !todos.some(x=>x.id===id)) todos.push({id,t:tt,s,done:false,custom:false}); });
+try{ localStorage.setItem(TKEY+"-seen",JSON.stringify(TODO_DEFAULT.map(d=>d[0]))); localStorage.setItem(TKEY,JSON.stringify(todos)); }catch(_){}
+todos.forEach(x=>{ if(x.custom) return; const d=TODO_DEFAULT.find(y=>y[0]===x.id); if(d){ x.t=d[1]; x.s=d[2]; } });
+let lastRemoved=null;
+const saveTodos=()=>{ try{ localStorage.setItem(TKEY,JSON.stringify(todos)); }catch(_){} };
+function renderTodos(){
+  const list=document.getElementById("todo");
+  if(!todos.length){
+    list.innerHTML='<p class="todo-empty">No hay pendientes. Agrega uno nuevo abajo o restaura la lista original.</p>';
+  } else {
+    list.innerHTML=todos.map(x=>
+      '<div class="todo-item'+(x.done?' is-done':'')+'" data-id="'+esc(x.id)+'">'+
+        '<label class="done-box" title="Marcar como listo"><input type="checkbox" class="todo-cb" id="t-'+esc(x.id)+'" '+(x.done?'checked':'')+' aria-label="'+esc(x.t)+' listo"></label>'+
+        '<div><b>'+esc(x.t)+'</b>'+(x.s?'<span class="sub">'+esc(x.s)+'</span>':'')+(x.done?'<span class="tag">Listo</span>':'')+'</div>'+
+        '<button type="button" class="icon-btn danger todo-del" aria-label="Quitar: '+esc(x.t)+'">Quitar</button>'+
+      '</div>').join("");
+  }
+  const n=todos.filter(x=>x.done).length;
+  document.getElementById("todo-count").innerHTML = todos.length ? '<b>'+n+'</b> de <b>'+todos.length+'</b> listos · <b>'+(todos.length-n)+'</b> por resolver' : 'Lista vacía';
+  document.getElementById("todo-clear").hidden = n===0;
+}
+function renderUndo(){
+  const u=document.getElementById("todo-undo");
+  if(!lastRemoved){ u.innerHTML=""; return; }
+  const label = lastRemoved.items.length===1 ? 'Quitaste «'+esc(lastRemoved.items[0].x.t)+'».' : 'Quitaste '+lastRemoved.items.length+' pendientes listos.';
+  u.innerHTML='<div class="undo"><span>'+label+'</span><button type="button" class="icon-btn" id="todo-undo-btn">Deshacer</button></div>';
+}
+document.getElementById("todo").addEventListener("change",e=>{
+  const cb=e.target.closest(".todo-cb"); if(!cb) return;
+  const id=cb.closest(".todo-item").dataset.id; const x=todos.find(y=>y.id===id); if(!x) return;
+  x.done=cb.checked; saveTodos(); renderTodos();
+  const again=document.getElementById("t-"+id); if(again) again.focus();
+});
+document.getElementById("todo").addEventListener("click",e=>{
+  const del=e.target.closest(".todo-del"); if(!del) return;
+  const id=del.closest(".todo-item").dataset.id; const i=todos.findIndex(y=>y.id===id); if(i<0) return;
+  lastRemoved={items:[{x:todos[i],i}]}; todos.splice(i,1); saveTodos(); renderTodos(); renderUndo();
+  const b=document.getElementById("todo-undo-btn"); if(b) b.focus();
+});
+document.getElementById("todo-undo").addEventListener("click",e=>{
+  if(!e.target.closest("#todo-undo-btn")||!lastRemoved) return;
+  lastRemoved.items.slice().sort((a,b)=>a.i-b.i).forEach(({x,i})=>todos.splice(Math.min(i,todos.length),0,x));
+  lastRemoved=null; saveTodos(); renderTodos(); renderUndo();
+});
+document.getElementById("todo-clear").addEventListener("click",()=>{
+  const items=[]; todos.forEach((x,i)=>{ if(x.done) items.push({x,i}); });
+  if(!items.length) return;
+  todos=todos.filter(x=>!x.done); lastRemoved={items}; saveTodos(); renderTodos(); renderUndo();
+});
+let resetArmed=false, resetTimer=null;
+document.getElementById("todo-reset").addEventListener("click",e=>{
+  const b=e.currentTarget;
+  if(!resetArmed){ resetArmed=true; b.textContent="Toca otra vez para restaurar"; clearTimeout(resetTimer); resetTimer=setTimeout(()=>{resetArmed=false; b.textContent="Restaurar lista original";},4000); return; }
+  resetArmed=false; clearTimeout(resetTimer); b.textContent="Restaurar lista original";
+  todos=fresh(); lastRemoved=null; saveTodos(); renderTodos(); renderUndo();
+});
+document.getElementById("todo-form").addEventListener("submit",e=>{
+  e.preventDefault();
+  const ti=document.getElementById("todo-t"), si=document.getElementById("todo-s"), err=document.getElementById("todo-err");
+  const tv=ti.value.trim(), sv=si.value.trim();
+  if(!tv){ err.textContent="Escribe el pendiente antes de agregarlo."; ti.focus(); return; }
+  err.textContent="";
+  todos.push({id:"u"+Date.now().toString(36)+Math.random().toString(36).slice(2,5), t:tv, s:sv, done:false, custom:true});
+  saveTodos(); renderTodos(); ti.value=""; si.value=""; ti.focus();
+});
+renderTodos();
+
+</script>
+
+</body></html>
